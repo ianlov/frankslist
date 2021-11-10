@@ -94,7 +94,7 @@ https://whimsical.com/GCXHbyVzbsU1NDhVJqskgQ
 |Fri Nov 12| Project Approvals / Start Back-End | Incomplete
 |Sat Nov 13|  | Incomplete
 |Sun Nov 14|  | Incomplete
-|Mon Nov 15| Back-End Complete | Incomplete
+|Mon Nov 15| Back-End Complete / Front-End Boilerplate Complete | Incomplete
 |Tue Nov 16|  | Incomplete
 |Wed Nov 17| MVP Done | Incomplete
 |Thu Nov 18|  | Incomplete
