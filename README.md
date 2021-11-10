@@ -1,5 +1,10 @@
 # project-three
-### Project Description:
+
+## Project Description
+
+## [Team Expectations](https://docs.google.com/document/d/1lDEXQ5Pm8ikYYdFSdEGdje6UNx6RS4BT0ljwfC3IXt4/edit)
+
+## [Kanban Board](https://trello.com/b/0nZGq3K3/tasks#)
 
 ## Wireframes
 
