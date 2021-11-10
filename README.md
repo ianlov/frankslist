@@ -90,8 +90,8 @@ https://whimsical.com/GCXHbyVzbsU1NDhVJqskgQ
 |  Day | Deliverable | Status
 |---|---|---|
 |Wed Nov 10| Team Expectation Approval / Project Idea Brainstorming | Incomplete
-|Thu Nov 11|  | Incomplete
-|Fri Nov 12| Project Approvals | Incomplete
+|Thu Nov 11| Figma Wireframe / Whimsical Component Heiarchy | Incomplete
+|Fri Nov 12| Project Approvals / Start Back-End | Incomplete
 |Sat Nov 13|  | Incomplete
 |Sun Nov 14|  | Incomplete
 |Mon Nov 15| Back-End Complete | Incomplete
