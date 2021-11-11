@@ -10,7 +10,11 @@ According to all known laws of aviation, there is no way that a bee should be ab
 
 #### [Kanban Board](https://trello.com/b/0nZGq3K3/tasks#)
 
+#### [Color Pallete](https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373-f9d150-f6c117)
+
 ## Wireframes
+
+https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/Project-3-WireFrame?fuid=1038077272784577990
 
 ### Desktop
 
