@@ -4,27 +4,37 @@
 
 According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway. Because bees don’t care what humans think is impossible.” SEQ. 75 - “INTRO TO BARRY” INT. BENSON HOUSE - DAY ANGLE ON: Sneakers on the ground. Camera PANS UP to reveal BARRY BENSON’S BEDROOM ANGLE ON: Barry’s hand flipping through different sweaters in his closet. BARRY Yellow black, yellow black, yellow black, yellow black, yellow black, yellow black...oohh, black and yellow...
 
-## [Team Expectations Document](https://docs.google.com/document/d/1lDEXQ5Pm8ikYYdFSdEGdje6UNx6RS4BT0ljwfC3IXt4/edit)
+## Team Links
 
-## [Kanban Board](https://trello.com/b/0nZGq3K3/tasks#)
+#### [Team Expectations Document](https://docs.google.com/document/d/1lDEXQ5Pm8ikYYdFSdEGdje6UNx6RS4BT0ljwfC3IXt4/edit)
+
+#### [Kanban Board](https://trello.com/b/0nZGq3K3/tasks#)
 
 ## Wireframes
 
-#### Desktop
+### Desktop
 
-#### Mobile
+### Mobile
 
 ## Component Hierarchy
 
+https://whimsical.com/GCXHbyVzbsU1NDhVJqskgQ
+
 ## API and Data Sample
 
-he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the 
+### API Sample
 
 ```
 
 ```
 
-### MVP
+### Schema
+
+```
+
+```
+
+## MVP Goals
 
 #### Planning
 
@@ -80,11 +90,11 @@ he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today 
 |  Day | Deliverable | Status
 |---|---|---|
 |Wed Nov 10| Team Expectation Approval / Project Idea Brainstorming | Incomplete
-|Thu Nov 11|  | Incomplete
-|Fri Nov 12| Project Approvals | Incomplete
+|Thu Nov 11| Figma Wireframe / Whimsical Component Heiarchy | Incomplete
+|Fri Nov 12| Project Approvals / Start Back-End | Incomplete
 |Sat Nov 13|  | Incomplete
 |Sun Nov 14|  | Incomplete
-|Mon Nov 15| Back-End Complete | Incomplete
+|Mon Nov 15| Back-End Complete / Front-End Boilerplate Complete | Incomplete
 |Tue Nov 16|  | Incomplete
 |Wed Nov 17| MVP Done | Incomplete
 |Thu Nov 18|  | Incomplete
@@ -95,7 +105,7 @@ he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today 
 
 ## Code Samples
 
-#### Code Sample 1
+### Code Sample 1
 
 he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the 
 
@@ -103,7 +113,7 @@ he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today 
 
 ```
 
-#### Code Sample 2
+### Code Sample 2
 
 he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the 
 
@@ -111,7 +121,7 @@ he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today 
 
 ```
 
-#### Code Sample 3
+### Code Sample 3
 
 he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the 
 
