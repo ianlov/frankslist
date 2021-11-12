@@ -30,7 +30,7 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 ## Component Hierarchy
 
-![image](https://user-images.githubusercontent.com/89525025/141533246-755b9b92-8de6-43ef-9ceb-e7e74290b506.png)
+![image](https://user-images.githubusercontent.com/89525025/141538449-e190ae99-b975-41c5-a001-7f4d1eafc715.png)
 
 
 ## API and Data Sample
