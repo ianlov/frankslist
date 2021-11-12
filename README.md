@@ -2,7 +2,9 @@
 
 ## Project Description
 
-According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway. Because bees don’t care what humans think is impossible.” SEQ. 75 - “INTRO TO BARRY” INT. BENSON HOUSE - DAY ANGLE ON: Sneakers on the ground. Camera PANS UP to reveal BARRY BENSON’S BEDROOM ANGLE ON: Barry’s hand flipping through different sweaters in his closet. BARRY Yellow black, yellow black, yellow black, yellow black, yellow black, yellow black...oohh, black and yellow...
+You work, you eat, you sleep - and that's about it... your life is boring. That's why we made Frankslist! Frankslist is the one stop web application for finding your dream hobby. Create an account, search for hobbies based on your unique lifestyle, and save your favorites! If you have a hobby you would like to share with the community, you create a new page for that hobby!
+
+Frankslist is optimized for web and mobile with full Back-End CRUD functionality. This project utilizes Mongoose, React, Express, and Node.
 
 ## Team Links
 
@@ -10,7 +12,7 @@ According to all known laws of aviation, there is no way that a bee should be ab
 
 #### [Kanban Board](https://trello.com/b/0nZGq3K3/tasks#)
 
-#### [Color Pallete](https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373-f9d150-f6c117)
+#### [Color Pallete](https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a37d-f9d150-f6c117-1f1f1f)
 
 #### [Wireframe](https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/frankslist---WireFrame?node-id=0%3A1)
 
@@ -51,8 +53,8 @@ https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/Project-3-WireFrame?fuid=10380
 - [x] Have a thoroughly documented Team Expectations Google document
 - [ ] Have a thoroughly developed, beautiful README.md file
 - [x] Take time for each team member to discuss where they feel strongest and weakest, in terms of coding ability
-- [ ] Create a Whimsical document to convey the data flow with component hierarchy included.
-- [ ] Create a detailed Figma wireframe.
+- [x] Create a Whimsical document to convey the data flow with component hierarchy included.
+- [x] Create a detailed Figma wireframe.
 
 #### Client (Front-End)
 
