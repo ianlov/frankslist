@@ -12,6 +12,10 @@ According to all known laws of aviation, there is no way that a bee should be ab
 
 #### [Color Pallete](https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373-f9d150-f6c117)
 
+#### [Wireframe](https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/frankslist---WireFrame?node-id=0%3A1)
+
+#### [Component Hierarchy](https://whimsical.com/project-3-component-hierarchy-GCXHbyVzbsU1NDhVJqskgQ)
+
 ## Wireframes
 
 https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/Project-3-WireFrame?fuid=1038077272784577990
@@ -22,7 +26,7 @@ https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/Project-3-WireFrame?fuid=10380
 
 ## Component Hierarchy
 
-https://whimsical.com/GCXHbyVzbsU1NDhVJqskgQ
+![image](https://user-images.githubusercontent.com/89525025/141490261-ff4d7378-bdd3-40ac-ab7a-f29964f5f168.png)
 
 ## API and Data Sample
 
