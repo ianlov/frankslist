@@ -2,7 +2,7 @@
 
 ## Project Description
 
-You work, you eat, you sleep - and that's about it... your life is boring. That's why we made Frankslist! Frankslist is the one stop web application for finding your dream hobby. Create an account, search for hobbies based on your unique lifestyle, and save your favorites! If you have a hobby you would like to share with the community, you create a new page for that hobby!
+You work, you eat, you sleep - and that's about it... your life is boring. That's why we made Frankslist! Frankslist is the one stop web application for finding your dream hobby. Create an account, search for hobbies based on your unique lifestyle, and save your favorites! If you have a hobby you would like to share with the community, you can create a new page for that hobby!
 
 Frankslist is optimized for web and mobile with full Back-End CRUD functionality. This project utilizes Mongoose, React, Express, and Node.
 
