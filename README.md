@@ -1,8 +1,10 @@
-# Project Three
+# Frankslist
 
 ## Project Description
 
-According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway. Because bees don’t care what humans think is impossible.” SEQ. 75 - “INTRO TO BARRY” INT. BENSON HOUSE - DAY ANGLE ON: Sneakers on the ground. Camera PANS UP to reveal BARRY BENSON’S BEDROOM ANGLE ON: Barry’s hand flipping through different sweaters in his closet. BARRY Yellow black, yellow black, yellow black, yellow black, yellow black, yellow black...oohh, black and yellow...
+You work, you eat, you sleep - and that's about it... your life is boring. That's why we made Frankslist! Frankslist is the one stop web application for finding your dream hobby. Create an account, search for hobbies based on your unique lifestyle, and save your favorites! If you have a hobby you would like to share with the community, you can create a new page for that hobby!
+
+Frankslist is optimized for web and mobile with full Back-End CRUD functionality. This project utilizes Mongoose, React, Express, and Node.
 
 ## Team Links
 
@@ -10,19 +12,25 @@ According to all known laws of aviation, there is no way that a bee should be ab
 
 #### [Kanban Board](https://trello.com/b/0nZGq3K3/tasks#)
 
-#### [Color Pallete](https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373-f9d150-f6c117)
+#### [Color Pallete](https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a37d-f9d150-f6c117-1f1f1f)
+
+#### [Wireframe](https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/frankslist---WireFrame?node-id=0%3A1)
+
+#### [Component Hierarchy](https://whimsical.com/project-3-component-hierarchy-GCXHbyVzbsU1NDhVJqskgQ)
 
 ## Wireframes
 
-https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/Project-3-WireFrame?fuid=1038077272784577990
-
 ### Desktop
+
+![image](https://user-images.githubusercontent.com/89525025/141525328-aef7e71e-be57-46d2-a5d0-0ae30151e11e.png)
 
 ### Mobile
 
+![image](https://user-images.githubusercontent.com/89525025/141530288-9b46c4a5-51f5-45b5-a318-a0402d0e6392.png)
+
 ## Component Hierarchy
 
-https://whimsical.com/GCXHbyVzbsU1NDhVJqskgQ
+![image](https://user-images.githubusercontent.com/89525025/141490261-ff4d7378-bdd3-40ac-ab7a-f29964f5f168.png)
 
 ![image](https://user-images.githubusercontent.com/89437311/141376827-f949ae18-acdd-4497-9a3c-0e8d44cb119f.png)
 
@@ -47,8 +55,8 @@ https://whimsical.com/GCXHbyVzbsU1NDhVJqskgQ
 - [x] Have a thoroughly documented Team Expectations Google document
 - [ ] Have a thoroughly developed, beautiful README.md file
 - [x] Take time for each team member to discuss where they feel strongest and weakest, in terms of coding ability
-- [ ] Create a Whimsical document to convey the data flow with component hierarchy included.
-- [ ] Create a detailed Figma wireframe.
+- [x] Create a Whimsical document to convey the data flow with component hierarchy included.
+- [x] Create a detailed Figma wireframe.
 
 #### Client (Front-End)
 
