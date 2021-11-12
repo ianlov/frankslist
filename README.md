@@ -20,13 +20,13 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 ## Wireframes
 
-https://www.figma.com/file/cVfhtMqJMW5fyUCsVsDBpH/Project-3-WireFrame?fuid=1038077272784577990
-
 ### Desktop
 
-
+![image](https://user-images.githubusercontent.com/89525025/141525328-aef7e71e-be57-46d2-a5d0-0ae30151e11e.png)
 
 ### Mobile
+
+![image](https://user-images.githubusercontent.com/89525025/141530288-9b46c4a5-51f5-45b5-a318-a0402d0e6392.png)
 
 ## Component Hierarchy
 
