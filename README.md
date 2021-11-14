@@ -32,7 +32,6 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 ![image](https://user-images.githubusercontent.com/89525025/141538449-e190ae99-b975-41c5-a001-7f4d1eafc715.png)
 
-
 ## API and Data Sample
 
 ### API Sample
@@ -44,6 +43,16 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 ### Schema
 
 ```
+const hobbySchema = new Schema({
+    name:  String,
+    rating: Number,
+    photo: String,
+    price: Number,
+    indoors: Boolean, // true is indoors, false is outdoors
+    risk: Number, // 1 = not risky, 2 = medium 3 = risky 4 = extreme
+    description: String,
+    featured: Boolean, // default is false and if true then added to feature list on the frontend
+  });
 
 ```
 
@@ -100,27 +109,27 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 ## Project Schedule
 
-|  Day | Deliverable | Status
-|---|---|---|
-|Wed Nov 10| Team Expectation Approval / Project Idea Brainstorming | Incomplete
-|Thu Nov 11| Figma Wireframe / Whimsical Component Heiarchy | Incomplete
-|Fri Nov 12| Project Approvals / Start Back-End | Incomplete
-|Sat Nov 13|  | Incomplete
-|Sun Nov 14|  | Incomplete
-|Mon Nov 15| Back-End Complete / Front-End Boilerplate Complete | Incomplete
-|Tue Nov 16|  | Incomplete
-|Wed Nov 17| MVP Done | Incomplete
-|Thu Nov 18|  | Incomplete
-|Fri Nov 19|  | Incomplete
-|Sat Nov 20|  | Incomplete
-|Sun Nov 21| Practice Presentation | Incomplete
-|Mon Nov 22| Presentation | Incomplete
+| Day        | Deliverable                                            | Status     |
+| ---------- | ------------------------------------------------------ | ---------- |
+| Wed Nov 10 | Team Expectation Approval / Project Idea Brainstorming | Incomplete |
+| Thu Nov 11 | Figma Wireframe / Whimsical Component Heiarchy         | Incomplete |
+| Fri Nov 12 | Project Approvals / Start Back-End                     | Incomplete |
+| Sat Nov 13 |                                                        | Incomplete |
+| Sun Nov 14 |                                                        | Incomplete |
+| Mon Nov 15 | Back-End Complete / Front-End Boilerplate Complete     | Incomplete |
+| Tue Nov 16 |                                                        | Incomplete |
+| Wed Nov 17 | MVP Done                                               | Incomplete |
+| Thu Nov 18 |                                                        | Incomplete |
+| Fri Nov 19 |                                                        | Incomplete |
+| Sat Nov 20 |                                                        | Incomplete |
+| Sun Nov 21 | Practice Presentation                                  | Incomplete |
+| Mon Nov 22 | Presentation                                           | Incomplete |
 
 ## Code Samples
 
 ### Code Sample 1
 
-he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the 
+he circumstances. \* They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the
 
 ```
 
@@ -128,7 +137,7 @@ he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today 
 
 ### Code Sample 2
 
-he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the 
+he circumstances. \* They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the
 
 ```
 
@@ -136,7 +145,7 @@ he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today 
 
 ### Code Sample 3
 
-he circumstances. * They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the 
+he circumstances. \* They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the
 
 ```
 
