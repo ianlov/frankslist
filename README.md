@@ -61,7 +61,7 @@ const hobbySchema = new Schema({
 #### Planning
 
 - [x] Have a thoroughly documented Team Expectations Google document
-- [ ] Have a thoroughly developed, beautiful README.md file
+- [x] Have a thoroughly developed, beautiful README.md file
 - [x] Take time for each team member to discuss where they feel strongest and weakest, in terms of coding ability
 - [x] Create a Whimsical document to convey the data flow with component hierarchy included.
 - [x] Create a detailed Figma wireframe.
@@ -104,7 +104,7 @@ const hobbySchema = new Schema({
 
 #### Procedural
 
-- [ ] Have frequent commits from every team member dating back to the very beginning of the project. These commits should total to or exceed 50.
+- [x] Have frequent commits from every team member dating back to the very beginning of the project. These commits should total to or exceed 50.
 - [ ] Use effective and safe branching and merging processes.
 
 ## Project Schedule
