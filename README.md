@@ -54,6 +54,17 @@ const hobbySchema = new Schema({
     featured: Boolean, // default is false and if true then added to feature list on the frontend
   });
 
+const User = new Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+    },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true, select: false },
+  },
+  { timestamps: true }
+)
 ```
 
 ## MVP Goals
