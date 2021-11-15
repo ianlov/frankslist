@@ -1,10 +1,10 @@
 import db from '../db/connection.js'
-import Product from '../models/product.js'
+import Hobby from '../models/hobby.js'
 import User from '../models/user.js'
 import bcrypt from 'bcrypt'
 
 const insertData = async () => {
-  // reset database
+
   await db.dropDatabase()
 
   const user1 = new User({
@@ -35,16 +35,13 @@ const insertData = async () => {
   })
   await user4.save()
 
-  // products data that we want inserted into database
   const hobbies = [
    
   ]
 
-  // insert products into database
   await Hobby.insertMany(hobbies)
   console.log('Created users & products!')
 
-  // close database connection. done.
   db.close()
 }
 
