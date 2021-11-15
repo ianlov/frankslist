@@ -35,16 +35,19 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 ## Schema
 
 ```
-const hobbySchema = new Schema({
-    name:  String,
-    rating: Number,
-    photo: String,
-    price: Number,
-    indoors: Boolean, // true is indoors, false is outdoors
-    risk: Number, // 1 = not risky, 2 = medium 3 = risky 4 = extreme
-    description: String,
-    featured: Boolean, // default is false and if true then added to feature list on the frontend
-  });
+const Hobby = new Schema(
+  {
+    name: { type: String, required: true },
+    img_url: { type: String, required: true },
+    description: { type: String, required: true },
+    price: { low: Number, high: Number, required: true },
+    rating: { type: Number, required: false },
+    indoors: { type: String, required: true },
+    risk: { type: Number, required: true },
+    featured: { type: Boolean, required: false },
+  },
+  { timestamps: true }
+);
 
 const User = new Schema(
   {
@@ -114,11 +117,11 @@ const User = new Schema(
 
 | Day        | Deliverable                                            | Status     |
 | ---------- | ------------------------------------------------------ | ---------- |
-| Wed Nov 10 | Team Expectation Approval / Project Idea Brainstorming | Complete |
-| Thu Nov 11 | Figma Wireframe / Whimsical Component Heiarchy         | Complete |
-| Fri Nov 12 | Project Approvals / Start Back-End                     | Complete |
-| Sat Nov 13 |                                                        | Complete |
-| Sun Nov 14 | Start Back-End                                         | Complete |
+| Wed Nov 10 | Team Expectation Approval / Project Idea Brainstorming | Complete   |
+| Thu Nov 11 | Figma Wireframe / Whimsical Component Heiarchy         | Complete   |
+| Fri Nov 12 | Project Approvals / Start Back-End                     | Complete   |
+| Sat Nov 13 |                                                        | Complete   |
+| Sun Nov 14 | Start Back-End                                         | Complete   |
 | Mon Nov 15 | Back-End Complete / Front-End Boilerplate Complete     | Incomplete |
 | Tue Nov 16 |                                                        | Incomplete |
 | Wed Nov 17 | MVP Done                                               | Incomplete |
