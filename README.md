@@ -32,15 +32,7 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 ![image](https://user-images.githubusercontent.com/89525025/141538449-e190ae99-b975-41c5-a001-7f4d1eafc715.png)
 
-## API and Data Sample
-
-### API Sample
-
-```
-
-```
-
-### Schema
+## Schema
 
 ```
 const hobbySchema = new Schema({
