@@ -35,16 +35,13 @@ const insertData = async () => {
   })
   await user4.save()
 
-  // products data that we want inserted into database
+ 
   const hobbies = [
    
   ]
-
-  // insert products into database
   await Hobby.insertMany(hobbies)
-  console.log('Created users & products!')
+  console.log('Created users & hobbies!')
 
-  // close database connection. done.
   db.close()
 }
 
