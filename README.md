@@ -111,11 +111,11 @@ const hobbySchema = new Schema({
 
 | Day        | Deliverable                                            | Status     |
 | ---------- | ------------------------------------------------------ | ---------- |
-| Wed Nov 10 | Team Expectation Approval / Project Idea Brainstorming | Incomplete |
-| Thu Nov 11 | Figma Wireframe / Whimsical Component Heiarchy         | Incomplete |
-| Fri Nov 12 | Project Approvals / Start Back-End                     | Incomplete |
-| Sat Nov 13 |                                                        | Incomplete |
-| Sun Nov 14 |                                                        | Incomplete |
+| Wed Nov 10 | Team Expectation Approval / Project Idea Brainstorming | Complete |
+| Thu Nov 11 | Figma Wireframe / Whimsical Component Heiarchy         | Complete |
+| Fri Nov 12 | Project Approvals / Start Back-End                     | Complete |
+| Sat Nov 13 |                                                        | Complete |
+| Sun Nov 14 | Start Back-End                                         | Complete |
 | Mon Nov 15 | Back-End Complete / Front-End Boilerplate Complete     | Incomplete |
 | Tue Nov 16 |                                                        | Incomplete |
 | Wed Nov 17 | MVP Done                                               | Incomplete |
