@@ -85,7 +85,7 @@ const User = new Schema(
 
 #### Server (Back-End)
 
-- [ ] Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.
+- [x] Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.
 - [ ] Utilize user authentication.
 
 #### Styling
