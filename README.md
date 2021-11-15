@@ -42,7 +42,7 @@ const Hobby = new Schema(
     description: { type: String, required: true },
     price: { low: Number, high: Number, required: true },
     rating: { type: Number, required: false },
-    indoors: { type: String, required: true },
+    indoors: { type: Boolean, required: true },
     risk: { type: Number, required: true },
     featured: { type: Boolean, required: false },
   },

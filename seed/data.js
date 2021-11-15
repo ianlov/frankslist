@@ -73,13 +73,13 @@ const insertData = async () => {
     },
     {
       name: "Soccer",
-      Img_url:
+      img_url:
         "https://img.bleacherreport.net/img/images/photos/003/854/951/hi-res-c5f8b16c7cd714c965daee605973840a_crop_north.jpg?1582905000&w=3072&h=2048",
       description:
         "Soccer is a game played on a field between two teams of 11 players each with the object to propel a round ball into the opponent's goal by kicking or by hitting it with any part of the body except the hands and arms. Also known as Football in every country besides the US, Soccer is the most popular sport in the world.",
       price: {
-        Low: 0,
-        High: 0,
+        low: 0,
+        high: 0,
       },
       Rating: 4.9,
       indoors: false,
@@ -93,8 +93,8 @@ const insertData = async () => {
       description:
         "The activity of riding a motorized personal watercraft. One or two people ride on the water in much the same way as one rides a motorcycle. Jet skis are widely regarded as the most dangerous of all water craft due to a combination of factors. It is also great for developing your balance, coordination, and leg strength.",
       price: {
-        Low: 200,
-        High: 20000,
+        low: 200,
+        high: 20000,
       },
       rating: 4.8,
       indoors: false,
@@ -107,9 +107,9 @@ const insertData = async () => {
         "https://cdn.quedos.com.au/wp-content/uploads/2021/07/billiards.jpg",
       description:
         "Billiards refers to any of various games played on a cloth-topped, cushion-railed rectangular table by driving small, hard balls against one another or into pockets, with a long stick called a cue.",
-      Price: {
-        Low: 7,
-        High: 10,
+      price: {
+        low: 7,
+        high: 10,
       },
       rating: 4.3,
       indoors: true,
@@ -123,11 +123,11 @@ const insertData = async () => {
       description:
         "Whitewater kayaking is a recreational outdoor activity which uses a kayak to navigate a river or other body of whitewater or rough water. Whitewater kayaking is the sport where kayaks are ridden down rivers over waters of varying grades. Canoes and rafts are also used in the same way but are considered different sports because of the differences in boats, seating, and paddles.",
       price: {
-        Low: 500,
-        High: 1500,
+        low: 500,
+        high: 1500,
       },
       rating: 4.5,
-      Indoors: false,
+      indoors: false,
       risk: 3,
       featured: false,
     },
@@ -138,8 +138,8 @@ const insertData = async () => {
       description:
         "Flatwater kayaking refers to a type of kayaking that takes place on a body of water that is sheltered from waves, excessive wind, and current. It most typically takes place on small lakes, ponds and other tranquil bodies of water such as marshes or swamps. As there are fewer obstacles and challenges, flatwater kayaking is a great fit for beginners.",
       price: {
-        Low: 30,
-        High: 800,
+        low: 30,
+        high: 800,
       },
       rating: 3.9,
       indoors: false,
@@ -148,12 +148,13 @@ const insertData = async () => {
     },
     {
       name: "Brazilian Jiu-Jitsu",
-      Img_url: "",
+      img_url:
+        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbeaufortmma-wpengine.netdna-ssl.com%2Fwp-content%2Fuploads%2F2017%2F03%2FDSC_0390.jpg&f=1&nofb=1",
       description:
         "Brazilian Jiu-Jitsu is a martial art and combat sport based on ground fighting and submission holds. It focuses on the skill of taking an opponent to the ground, controlling one's opponent, gaining a dominant position, and using a number of techniques to force them into submission via joint locks or chokeholds. BJJ revolves around the concept that a smaller, weaker person can successfully defend him/herself against a bigger, stronger, heavier opponent by using leverage and weight distribution, taking the fight to the ground and using a number of holds and submissions to defeat them. BJJ training can be used for sport grappling and self-defense situations.",
       price: {
-        Low: 80,
-        High: 200,
+        low: 80,
+        high: 200,
       },
       rating: 4.9,
       indoors: true,
@@ -186,13 +187,13 @@ const insertData = async () => {
     },
     {
       name: "Running",
-      Img_url:
+      img_url:
         "https://websiteforrunners.com/wp-content/uploads/2020/07/Snapwire-Running-17-38ab6267e82c41a0b03b66469087aefb.jpg",
       description:
         "Running recreationally at parks, beaches, or in your neighborhood.",
-      Price: {
-        Low: 0,
-        High: 0,
+      price: {
+        low: 0,
+        high: 0,
       },
       rating: 1.2,
       indoors: false,
@@ -225,7 +226,7 @@ const insertData = async () => {
     },
     {
       name: "paddleboarding",
-      Img_url:
+      img_url:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Nr-i_9UsaohXHcHNemsEkqNUPMX_FA9Mog&usqp=CAU",
       description:
         "Too scared to surf? No worries, you can get the feel in a safer manner with paddle boards. Cruise your way along the water and enjoy the breeze.",
@@ -263,9 +264,9 @@ const insertData = async () => {
       name: "Video Games",
       img_url:
         "https://media.wired.com/photos/5926cb068d4ebc5ab806b7ed/master/pass/GettyImages-502197417.jpg",
-      Description:
+      description:
         "Playing video games has become one of the most played hobbies in the world. The video game industry has been estimated to be larger than music and movies combined. Most popular systems include: PC, PS5, Xbox Series X, Nintendo Switch",
-      price: { Low: 0, High: 10000 },
+      price: { low: 0, high: 10000 },
       rating: 4.5,
       indoors: true,
       risk: 1,
