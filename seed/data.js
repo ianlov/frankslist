@@ -40,7 +40,7 @@ const insertData = async () => {
   ]
 
   await Hobby.insertMany(hobbies)
-  console.log('Created users & products!')
+  console.log('Created users & hobbies!')
 
   db.close()
 }
