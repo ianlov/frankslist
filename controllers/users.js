@@ -13,7 +13,6 @@ if (process.env.NODE_ENV === 'production') {
   TOKEN_KEY = process.env.TOKEN_KEY
 }
 
-
 const today = new Date()
 const exp = new Date(today)
 exp.setDate(today.getDate() + 30)
