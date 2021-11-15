@@ -122,7 +122,7 @@ const User = new Schema(
 | Fri Nov 12 | Project Approvals / Start Back-End                     | Complete   |
 | Sat Nov 13 |                                                        | Complete   |
 | Sun Nov 14 | Start Back-End                                         | Complete   |
-| Mon Nov 15 | Back-End Complete / Front-End Boilerplate Complete     | Incomplete |
+| Mon Nov 15 | Back-End Complete / Front-End Boilerplate Complete     | Complete   |
 | Tue Nov 16 |                                                        | Incomplete |
 | Wed Nov 17 | MVP Done                                               | Incomplete |
 | Thu Nov 18 |                                                        | Incomplete |
