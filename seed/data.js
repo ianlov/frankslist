@@ -34,7 +34,18 @@ const insertData = async () => {
   });
   await user4.save();
 
-  const hobbies = [];
+  const hobbies = [
+    {
+      name: { type: String, required: true },
+      img_url: { type: String, required: true },
+      description: { type: String, required: true },
+      price: { low: Number, high: Number, required: true },
+      rating: { type: Number, required: false },
+      indoors: { type: String, required: true },
+      risk: { type: Number, required: true },
+      featured: { type: Boolean, required: false },
+    },
+  ];
 
   await Hobby.insertMany(hobbies);
   console.log("Created users & hobbies!");
