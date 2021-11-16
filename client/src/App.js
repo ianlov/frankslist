@@ -5,7 +5,7 @@ import Create from './screens/Create/Create'
 import Detail from './screens/Detail/Detail'
 import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
 import Profile from './screens/Profile/Profile'
-import Search from './screens/Search/Search'
+import Hobbies from './screens/Search/Search'
 import Splash from './screens/Splash/Splash'
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
           <LoginSignUp setUser={setUser} />
         </Route>
         <Route path="/hobbies">
-          <Search setUser={setUser} />
+          <Hobbies setUser={setUser} />
         </Route>
         <Route path="/hobbies/:id">
           <Detail setUser={setUser} />
