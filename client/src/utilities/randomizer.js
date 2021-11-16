@@ -4,6 +4,8 @@
   Get random element, slice element from array, repeat n times
 */
 
+
+
 const randomizer = (n, arr) => {
   const random = [];
   for (let i = n; i > 0; i--) {
@@ -14,4 +16,4 @@ const randomizer = (n, arr) => {
   return random
 }
 
-console.log(randomizer(3, [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+export default randomizer;
