@@ -1,4 +1,4 @@
-import "./nav.css";
+import "./style.css";
 
 const Navbar = () => {
   return (
