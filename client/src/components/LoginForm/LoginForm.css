@@ -1,0 +1,49 @@
+.container{
+  padding: 40px 0;
+  background-color: white;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 350px;
+}
+
+.text__signin__1 {
+  margin: 15px 0 5px 0;
+      text-align: left;
+      padding: 0 110px;
+}
+
+.text__signin__2 {
+  margin: 20px 0 5px 0;
+      text-align: left;
+      padding: 0 110px;
+}
+
+.password {
+  margin-bottom: -20px;
+}
+
+
+.btn__2 {
+  margin: 5px 0 -15px 0;
+  background-color: #2d251d;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+}
+
+.btn__3 {
+  margin: -10px 0;
+  background-color: #3db559;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+}
