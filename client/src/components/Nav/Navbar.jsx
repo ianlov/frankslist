@@ -1,11 +1,13 @@
 import "./style.css";
+import Search from "./Search/Search.js"
 
 const Navbar = () => {
+  
   return (
     <nav className="container">
       <div className="nav__left">
         <h1 className="nav__logo">frankslist</h1>
-        <input className="nav__search" type="text" placeholder="Search..." />
+        <Search />
       </div>
       <div className="nav__right">
         <ul className="nav__ul">
