@@ -4,22 +4,25 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router";
 
-const Related = (props) => {
-  const relatedArray = related(props.hobbyDetail)
+const Related = () => {
+  const relatedArray = related(hobbyDetail ,hobbies)
 
   return (
     <div className="related-container">
       <div className="related-container__title">Related</div>
-      {relatedArray.map((hobby, idx) => {
+      {relatedArray.map((hobby, idx) => (
         <Link 
           className="related-container__related"
           to={`/hobbies/${hobby.id}`}
           key={idx}
         >
-          <img src={hobby.img_url} alt={`Related ${idx}`} />
-          <p>{hobby.name}</p>
+          <div 
+            className="img"
+            style={{ backgroundImage : `url(${hobby.img_url})` }}
+          ></div>
+          <div>{hobby.name}</div>
         </Link>
-      })}
+      ))}
     </div>
   )
 }
