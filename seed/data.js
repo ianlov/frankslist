@@ -245,7 +245,7 @@ const insertData = async () => {
       price: { low: 0, high: 1000000000 },
       rating: 1,
       indoors: false,
-      risk: 2.69,
+      risk: 2,
       featured: false,
     },
     {
