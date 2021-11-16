@@ -1,23 +1,49 @@
-import logo from './logo.svg';
+import { Route, Switch, Redirect } from 'react-router-dom'
 import './App.css';
+import About from './screens/About/About'
+import Create from './screens/Create/Create'
+import Detail from './screens/Detail/Detail'
+import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
+import Profile from './screens/Profile/Profile'
+import Search from './screens/Search/Search'
+import Splash from './screens/Splash/Splash'
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser()
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser()
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/">
+          <Splash user={user} />
+        </Route>
+        <Route path="/sign-in">
+          <LoginSignUp setUser={setUser} />
+        </Route>
+        <Route path="/hobbies">
+          <Search setUser={setUser} />
+        </Route>
+        <Route path="/hobbies/:id">
+          <Detail setUser={setUser} />
+        </Route>
+        <Route path="/aboutus">
+          <About setUser={setUser} />
+        </Route>
+        <Route path="/newhobby">
+          {user ? <Create user={user} /> : <Redirect to="/sign-up" />}
+        </Route>
+        <Route path="/myprofile">
+          {user ? <Profile user={user} /> : <Redirect to="/sign-up" />}
+        </Route>
+      </Switch>
     </div>
   );
 }
