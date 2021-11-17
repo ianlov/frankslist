@@ -82,4 +82,3 @@ export const verify = async (req, res) => {
   }
 }
 
-export const changePassword = async (req, res) => {}
