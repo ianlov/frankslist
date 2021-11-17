@@ -1,8 +1,8 @@
-import "./splash.css";
+import "./style.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
-const Splash = () => {
+const SplashContainer = () => {
   return (
     <>
       <section className="head">
@@ -115,4 +115,4 @@ const Splash = () => {
   );
 };
 
-export default Splash;
+export default SplashContainer;
