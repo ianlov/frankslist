@@ -26,7 +26,7 @@ const App = () => {
         <Route exact path="/">
           <Splash user={user} />
         </Route>
-        {/* <Route path="/sign-in">
+        <Route path="/sign-in">
           <LoginSignUp setUser={setUser} />
         </Route>
         <Route path="/hobbies">
@@ -43,7 +43,7 @@ const App = () => {
         </Route>
         <Route path="/myprofile">
           {user ? <Profile user={user} /> : <Redirect to="/sign-up" />}
-        </Route> */}
+        </Route>
       </Switch>
     </div>
   );
