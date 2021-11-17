@@ -1,8 +1,7 @@
 import "./style.css";
-import Search from "./Search/Search.js"
+import Search from "../Search/Search";
 
 const Navbar = () => {
-  
   return (
     <nav className="container">
       <div className="nav__left">

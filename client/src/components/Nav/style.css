@@ -63,9 +63,6 @@
   .nav__button {
     width: 100px;
   }
-  .nav__search {
-    width: 38vw;
-  }
   .nav__ul {
     padding-left: 10px;
   }
@@ -77,8 +74,5 @@
   }
   .nav__right {
     display: none;
-  }
-  .nav__search {
-    width: 300px;
   }
 }

@@ -1,44 +1,44 @@
-import './Search.css'
+import "./Search.css";
 import { useEffect, useState } from "react";
-import {Route, Redirect} from "react-router-dom"
+import { Route, Redirect } from "react-router-dom";
 
 const Search = () => {
-    const [hobbies, setHobbies] = useState([])
-    
-    useEffect(() => {
-        const getHobbies = async () => {
-            const hobbyAPI = await getHobbies()
-            setHobbies(hobbyAPI)
-            setSearchResult(hobbyAPI)
-        }
-    }, [])
+  const [hobbies, setHobbies] = useState([]);
 
-    const handleSearch = (event) => {
-        const results = hobbies.filter((hobby) =>
-          hobby.toLowerCase().includes(event.target.value.toLowerCase())
-        )
-        setSearchResult(results)
-    }
+  // useEffect(() => {
+  //     const getHobbies = async () => {
+  //         const hobbyAPI = await getHobbies()
+  //         setHobbies(hobbyAPI)
+  //         setSearchResult(hobbyAPI)
+  //     }
+  // }, [])
 
-    const onSubmit = (event) => {
-      <Route>
-        <Redirect to="/hobbies" /> 
-      </Route>
-    }
+  // const handleSearch = (event) => {
+  //     const results = hobbies.filter((hobby) =>
+  //       hobby.toLowerCase().includes(event.target.value.toLowerCase())
+  //     )
+  //     setSearchResult(results)
+  // }
 
-    return (
-        <form className="bar" onSubmit={(e) => onSubmit(e)}>
-            <input
-                className="search-input"
-                onChange={(e) => handleSearch(e)}
-                value={value}
-                name="Search"
-                placeholder="Search"
-                type="text"
-                autoFocus
-            />
-        </form>
-    )
-}
+  const onSubmit = (event) => {
+    <Route>
+      <Redirect to="/hobbies" />
+    </Route>;
+  };
 
-export default Search
+  return (
+    <form onSubmit={(e) => onSubmit(e)}>
+      <input
+        className="bar"
+        // onChange={(e) => handleSearch(e)}
+        // value={value}
+        name="Search"
+        placeholder="Search"
+        type="text"
+        autoFocus
+      />
+    </form>
+  );
+};
+
+export default Search;
