@@ -1,23 +1,24 @@
-import { Route, Switch, Redirect } from 'react-router-dom'
-import './App.css';
-import About from './screens/About/About'
-import Create from './screens/Create/Create'
-import Detail from './screens/Detail/Detail'
-import LoginSignUp from './screens/LoginSignUp/LoginSignUp'
-import Profile from './screens/Profile/Profile'
-import Hobbies from './screens/Search/Search'
-import Splash from './screens/Splash/Splash'
+import { Route, Switch, Redirect } from "react-router-dom";
+import "./App.css";
+import About from "./screens/About/About";
+import Create from "./screens/Create/Create";
+import Detail from "./screens/Detail/Detail";
+import LoginSignUp from "./screens/LoginSignUp/LoginSignUp";
+import Profile from "./screens/Profile/Profile";
+import Hobbies from "./screens/Search/Search";
+import Splash from "./screens/Splash/Splash";
+import { useState, useEffect } from "react";
 
 const App = () => {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      const user = await verifyUser()
-      user ? setUser(user) : setUser(null)
-    }
-    fetchUser()
-  }, [])
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     const user = await verifyUser();
+  //     user ? setUser(user) : setUser(null);
+  //   };
+  //   fetchUser();
+  // }, []);
 
   return (
     <div className="App">
@@ -25,7 +26,7 @@ const App = () => {
         <Route exact path="/">
           <Splash user={user} />
         </Route>
-        <Route path="/sign-in">
+        {/* <Route path="/sign-in">
           <LoginSignUp setUser={setUser} />
         </Route>
         <Route path="/hobbies">
@@ -42,10 +43,10 @@ const App = () => {
         </Route>
         <Route path="/myprofile">
           {user ? <Profile user={user} /> : <Redirect to="/sign-up" />}
-        </Route>
+        </Route> */}
       </Switch>
     </div>
   );
-}
+};
 
 export default App;

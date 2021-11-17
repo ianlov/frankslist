@@ -1,13 +1,7 @@
-import { Layout } from '../../components'
-import './Search.css'
+import Layout from "../../components/Layout/Layout";
 
 const Hobbies = () => {
+  // return <Layout user={props.user}></Layout>;
+};
 
-    return (
-        <Layout user={props.user}>
-            
-        </Layout>
-    )
-}
-
-export default Hobbies
+export default Hobbies;
