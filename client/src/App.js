@@ -40,7 +40,7 @@ const App = () => {
         </Route>
         <Route path="/newhobby">
           {user ? <Create user={user} /> : <Redirect to="/sign-up" />}
-  </Route> */}
+  </Route>
         <Route path="/myprofile">
           <Profile/>
           {/* {user ? <Profile user={user} /> : <Redirect to="/sign-up" />} */}
