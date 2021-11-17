@@ -40,10 +40,11 @@ const App = () => {
         </Route>
         <Route path="/newhobby">
           {user ? <Create user={user} /> : <Redirect to="/sign-up" />}
-        </Route>
+  </Route> */}
         <Route path="/myprofile">
-          {user ? <Profile user={user} /> : <Redirect to="/sign-up" />}
-        </Route>
+          <Profile/>
+          {/* {user ? <Profile user={user} /> : <Redirect to="/sign-up" />} */}
+        </Route> 
       </Switch>
     </div>
   );
