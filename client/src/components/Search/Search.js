@@ -27,9 +27,9 @@ const Search = () => {
   };
 
   return (
-    <form className="bar" onSubmit={(e) => onSubmit(e)}>
+    <form onSubmit={(e) => onSubmit(e)}>
       <input
-        className="search-input"
+        className="bar"
         // onChange={(e) => handleSearch(e)}
         // value={value}
         name="Search"

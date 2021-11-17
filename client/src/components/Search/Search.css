@@ -1,12 +1,18 @@
 .bar {
-    background-color: #ebebeb;
-    border: none;
-    border-radius: 10px;
-    height: 30px;
-    width: 400px;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 400px;
+}
+@media only screen and (max-width: 1020px) {
+  .bar {
+    width: 300px;
   }
-  @media only screen and (max-width: 1020px) {
-    .bar {
-      width: 300px;
-    }
+}
+
+@media only screen and (max-width: 510px) {
+  .bar {
+    display: none;
   }
+}
