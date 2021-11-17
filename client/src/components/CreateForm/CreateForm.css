@@ -1,6 +1,5 @@
 .container__1{
   padding: 40px 0;
-
   background-color: white;
   margin-top: 100px;
   display: block;
@@ -34,30 +33,30 @@
 }
 
 .text__hobby__1 {
-  margin: 15px 0 5px 0;
+  margin: 25px 20px 5px 20px;
   text-align: left;
-  padding: 0 100px;
+  padding: 5px 60px;
 
 }
 
 .text__hobby__2 {
-  margin: 15px 0px 5px 0;
+  margin: 10px 20px 5px 20px;
   text-align: left;
-  padding: 0 100px;
+  padding: 5px 60px;
 
 }
 
 .text__hobby__3 {
-  margin: 15px 0 5px 0;
+  margin: 10px 20px 5px 20px;
   text-align: left;
-  padding: 0 80px;
+  padding: 5px 60px;
 
 }
 
 .text__hobby__4 {
-  margin: 20px 0 5px 0;
+  margin: 25px 20px 5px 20px;
   text-align: left;
-  padding: 0 110px;
+  padding: 5px 60px;
 
 }
 
@@ -66,10 +65,9 @@ margin: 20px 0 5px 0;
 padding: 10px 0 10px 110px;
 }
 
-.category {
-margin: 0;
-padding: 10px 0 10px 110px;
-text-align: left;
+.input-price {
+padding: 0 20px;
+text-align: center;
 }
 
 .form {
@@ -89,8 +87,8 @@ text-align: left;
 }
 
 .textbox {
-  padding: 30px 20px;
-  text-align: left;
+  padding: 0px 25px;
+  text-align: center;
 }
 
 .price {
