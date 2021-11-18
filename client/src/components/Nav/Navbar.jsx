@@ -19,7 +19,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="/aboutus">
               <a>About Us</a>
             </Link>
           </li>
@@ -29,7 +29,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <Link to="/sign-up">
+        <Link to="/sign-in">
           <button className="nav__button">Sign Up</button>
         </Link>
       </div>
