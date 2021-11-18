@@ -1,8 +1,48 @@
 import "./style.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import * as service from "./splashservices";
+import { useEffect, useState } from "react";
 
 const SplashContainer = () => {
+  const [featuredFocus, setFeaturedFocus] = useState(service.carouselArray[0]);
+  const [count, setCount] = useState(0);
+  const [toggleTransition, setTransition] = useState(false);
+
+  const handleForward = () => {
+    setTransition(true);
+    setTimeout(() => {
+      if (count === 0) {
+        setFeaturedFocus(service.carouselArray[1]);
+        setCount(1);
+      } else if (count === 1) {
+        setFeaturedFocus(service.carouselArray[2]);
+        setCount(2);
+      } else {
+        setFeaturedFocus(service.carouselArray[0]);
+        setCount(0);
+      }
+    }, 250);
+    setTimeout(() => setTransition(false), 500);
+  };
+
+  const handleBack = () => {
+    setTransition(true);
+    setTimeout(() => {
+      if (count === 0) {
+        setFeaturedFocus(service.carouselArray[2]);
+        setCount(2);
+      } else if (count === 1) {
+        setFeaturedFocus(service.carouselArray[0]);
+        setCount(0);
+      } else {
+        setFeaturedFocus(service.carouselArray[1]);
+        setCount(1);
+      }
+    }, 250);
+    setTimeout(() => setTransition(false), 500);
+  };
+
   return (
     <>
       <section className="head">
@@ -23,7 +63,7 @@ const SplashContainer = () => {
         </article>
         <article className="head__info2">
           <img
-            src="https://images.unsplash.com/uploads/141148589884100082977/a816dbd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            src="https://images.unsplash.com/photo-1529690840038-f38da8894ff6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
             alt=""
           />
           <div className="head__info2__box">
@@ -58,18 +98,37 @@ const SplashContainer = () => {
           <h3>Featured Hobbies</h3>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1495555687398-3f50d6e79e1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+              src={featuredFocus}
               alt=""
+              style={{ animation: toggleTransition && "fadein 500ms 1" }}
             />
             <div className="featured__buttons">
               <div className="featured__arrowLeft">
-                <ArrowBackIosIcon style={{ color: "white" }} />
+                <ArrowBackIosIcon
+                  style={{
+                    marginLeft: "5px",
+                    fontSize: "18px",
+                  }}
+                  onClick={handleBack}
+                />
               </div>
-              <div className="featured__tick "></div>
-              <div className="featured__tick"></div>
-              <div className="featured__tick"></div>
+              <div
+                style={{ backgroundColor: count === 0 && "black" }}
+                className="featured__tick"
+              ></div>
+              <div
+                style={{ backgroundColor: count === 1 && "black" }}
+                className="featured__tick"
+              ></div>
+              <div
+                style={{ backgroundColor: count === 2 && "black" }}
+                className="featured__tick"
+              ></div>
               <div className="featured__arrowRight">
-                <ArrowForwardIosIcon style={{ color: "white" }} />
+                <ArrowForwardIosIcon
+                  style={{ fontSize: "18px" }}
+                  onClick={handleForward}
+                />
               </div>
             </div>
           </div>
