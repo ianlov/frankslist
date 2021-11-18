@@ -33,7 +33,7 @@
   overflow-y: scroll;
 }
 
-.info {
+.modal-container__info {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -41,7 +41,7 @@
   padding: 10px 10px 10px 10px;
 }
 
-.info > img {
+.modal-container__info > img {
   height: 100%;
   max-height: 500px;
   width: auto;
@@ -54,7 +54,7 @@
   max-width: 500px;
   background-color: rgba(255,255,255,0.5);
   backdrop-filter: blur(4px);
-  margin-left: -20%;
+  margin-left: -40%;
   border-radius: 10px;
   max-height: 90%;
   overflow-y: scroll;
@@ -81,11 +81,11 @@
     background-color: initial;
   }
 
-  .info {
+  .modal-container {
     flex-flow: column nowrap;
   }
 
-  .info > img {
+  .modal-container > img {
     visibility: hidden;
     height: 0;
     width: 0;

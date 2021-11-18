@@ -6,7 +6,7 @@ const AboutModal = ({ isVisible, name, bio }) => {
     <div className="screen">
       <div className="modal-wrapper" >
         <div className="modal-container">
-          <div className="info" >
+          <div className="modal-container__info" >
             <img src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png" alt="Marquel" />
             <div className="bio" >
               <h1>{name}</h1>
