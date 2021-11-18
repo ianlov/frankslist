@@ -115,7 +115,7 @@
   animation: leftappear 700ms 1 linear;
 }
 
-.head__info3__box > button {
+.head__info3__boxButton {
   background-color: #d4a373;
   border: none;
   border-radius: 20px;
@@ -125,19 +125,25 @@
   filter: drop-shadow(0 2px 3px gray);
   justify-self: center;
   align-self: center;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.body {
+.splashBody {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.splashBody > article {
+  margin-top: 10px;
+}
+
 .body__featured > div > img {
   border-radius: 20px;
   height: 500px;
-  width: 55vw;
+  width: 75vw;
   max-width: 930px;
   object-fit: cover;
   object-position: center bottom;
@@ -174,17 +180,50 @@
   margin: 5px;
 }
 
-.body__categories > div {
+.body__categories > div > div {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
-.body__categories > div > div > img {
+.body__categories > div > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body__categories > div > div > div > img {
   height: 200px;
   width: 300px;
   object-fit: cover;
   margin: 5px;
   border-radius: 10px;
+  transition: 0.8s;
+}
+
+.overlayText {
+  margin-bottom: -205px;
+  position: relative;
+  z-index: 99;
+  opacity: 0;
+  transition: 0.8s;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.overlayText__h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  transition: 0.8s;
+}
+
+.overlayText:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadein {
@@ -254,9 +293,7 @@
   .body__featured > div > img {
     width: 100%;
     height: auto;
-  }
-  .featured__buttons {
-    display: none;
+    border-radius: 0;
   }
 }
 
@@ -273,14 +310,15 @@
   .head__info1 > img {
     width: 100%;
     height: auto;
+    border-radius: 0;
   }
   .head__info3__box,
   .head__info1__box {
-    margin: -23px -322px 0 62px;
+    margin: -23px -262px 0 62px;
   }
 
   .head__info2__box {
-    margin: -29px 29px 0 -289px;
+    margin: -14px 39px 0 -239px;
   }
 
   .head__info3__box,
@@ -306,7 +344,11 @@
   .head__info1__box > p {
     font-size: 12px;
   }
-  .body__categories > div > div > img {
+
+  .body__categories > div > div {
+    justify-content: center;
+  }
+  .body__categories > div > div > div > img {
     width: 100%;
   }
 }
