@@ -2,16 +2,37 @@ import "./style.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import * as service from "./splashservices";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import * as fetchRequest from "../../services/hobbies";
+import randomizer from "../../utilities/randomizer";
 
 const SplashContainer = () => {
   const [featuredFocus, setFeaturedFocus] = useState(service.carouselArray[0]);
   const [count, setCount] = useState(0);
   const [toggleTransition, setTransition] = useState(false);
+  const [indoor, setIndoor] = useState([]);
+  const [outdoor, setOutdoor] = useState([]);
 
-  console.log(fetchRequest.getHobbies());
+  useEffect(() => {
+    const fetchHobbies = async () => {
+      const res = await fetchRequest.getHobbies();
+      console.log(res);
+      setIndoor(
+        randomizer(
+          3,
+          res.filter((hobby) => hobby.indoors)
+        )
+      );
+      setOutdoor(
+        randomizer(
+          3,
+          res.filter((hobby) => !hobby.indoors)
+        )
+      );
+    };
+    fetchHobbies();
+  }, []);
 
   const handleForward = () => {
     setTransition(true);
@@ -54,10 +75,7 @@ const SplashContainer = () => {
           <div className="head__info1__box">
             <h1>1. Sign Up</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-              cumque accusamus placeat, modi quod officia tenetur a voluptates
-              repudiandae dolorem optio distinctio eos et eligendi est,
-              architecto obcaecati, voluptatum explicabo?
+            You work, you eat, you sleep - and that's about it... your life is boring. That's why we made Frankslist! Frankslist is the one stop web application for finding your dream hobby. Create an account, search for hobbies based on your unique lifestyle, and save your favorites! 
             </p>
           </div>
           <img
@@ -73,10 +91,7 @@ const SplashContainer = () => {
           <div className="head__info2__box">
             <h1>2. Explore</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-              cumque accusamus placeat, modi quod officia tenetur a voluptates
-              repudiandae dolorem optio distinctio eos et eligendi est,
-              architecto obcaecati, voluptatum explicabo?
+              Bored? Explore our catalog, meet new people, find a new passion, and starting living life.
             </p>
           </div>
         </article>
@@ -84,10 +99,7 @@ const SplashContainer = () => {
           <div className="head__info3__box">
             <h1>3. Discover</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-              cumque accusamus placeat, modi quod officia tenetur a voluptates
-              repudiandae dolorem optio distinctio eos et eligendi est,
-              architecto obcaecati, voluptatum explicabo?
+            Browse through our existing catalog of hobbies or if you have a hobby you would like to share with the community, you can create a new page for that hobby!
             </p>
             <Link to="/sign-in">
               <button className="head__info3__boxButton">Get Started</button>
@@ -143,66 +155,31 @@ const SplashContainer = () => {
           <div>
             <h3>Outdoor Hobbies</h3>
             <div>
-              <div>
-                <div className="overlayText">
-                  <h3 className="overlayText__h3">Poker</h3>
-                </div>
-                <img
-                  className="category__img"
-                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                  alt=""
-                />
-              </div>
-              <div>
-              <div className="overlayText">
-                  <h3 className="overlayText__h3">Poker</h3>
-                </div>
-                <img
-                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                  alt=""
-                />
-              </div>
-              <div>
-              <div className="overlayText">
-                  <h3 className="overlayText__h3">Poker</h3>
-                </div>
-                <img
-                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                  alt=""
-                />
-              </div>
+              {outdoor.map((hobby) => {
+                return (
+                  <div>
+                    <div className="overlayText">
+                      <h3 className="overlayText__h3">{hobby.name}</h3>
+                    </div>
+                    <img className="category__img" src={hobby.img_url} alt="" />
+                  </div>
+                );
+              })}
             </div>
           </div>
-          <div>
+          <div style={{marginTop:"10px"}}>
             <h3>Indoor Hobbies</h3>
             <div>
-              <div>
-              <div className="overlayText">
-                  <h3 className="overlayText__h3">Poker</h3>
-                </div>
-                <img
-                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                  alt=""
-                />
-              </div>
-              <div>
-              <div className="overlayText">
-                  <h3 className="overlayText__h3">Poker</h3>
-                </div>
-                <img
-                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                  alt=""
-                />
-              </div>
-              <div>
-              <div className="overlayText">
-                  <h3 className="overlayText__h3">Poker</h3>
-                </div>
-                <img
-                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                  alt=""
-                />
-              </div>
+              {indoor.map((hobby) => {
+                return (
+                  <div>
+                    <div className="overlayText">
+                      <h3 className="overlayText__h3">{hobby.name}</h3>
+                    </div>
+                    <img className="category__img" src={hobby.img_url} alt="" />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </article>
