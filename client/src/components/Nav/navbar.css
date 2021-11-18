@@ -1,10 +1,14 @@
 .navcontainer {
+  position: sticky;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ccd5ae;
   padding: 0 10px;
   height: 50px;
+  z-index: 999;
+  top: 0;
 }
 
 .nav__ul {
@@ -26,16 +30,16 @@
 .nav__logo {
   display: flex;
   flex-flow: row nowrap;
-  margin-right: 1vw;
+  margin-right: 2vw;
   text-decoration: none;
-  color: black;
+  color: white;
   justify-content: center;
   align-items: center;
 }
 
 .nav__logo__img {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -66,6 +70,7 @@
   width: 50px;
   height: 50px;
   margin-top: 26px;
+  cursor: pointer;
 }
 
 .hamburger > * {
@@ -73,6 +78,52 @@
   width: 25px;
   height: 2px;
   margin-bottom: 8px;
+}
+
+.hamburgerMenu {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+}
+
+.hamburgerMenu__ul {
+  list-style: square;
+}
+
+.hamburgerMenu__ul > * {
+  font-size: 36px;
+  color: black;
+  margin: 55px;
+}
+
+.hamburgerMenu__button {
+  background-color: #d4a373;
+  border: none;
+  border-radius: 20px;
+  height: 60px;
+  width: 200px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+}
+
+.hamburgerMenu > p {
+  font-size: 20px;
+  margin-top: 26px;
+  color: #ff9999;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1020px) {
+  .hamburgerMenu {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1020px) {
