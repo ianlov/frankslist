@@ -1,4 +1,4 @@
-import Navbar from '../../components/Nav/Navbar';
+import Layout from '../../components/Layout/Layout';
 import './style.css'
 
 function Profile() {
@@ -6,7 +6,7 @@ function Profile() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Layout>
       <div className='main__div'>
 
       <div className='left__profile__panel'>
@@ -134,6 +134,7 @@ function Profile() {
         </div>
         </div>
         </div>
+        </Layout>
     </>
   );
 }

@@ -9,6 +9,7 @@ import Hobbies from "./screens/Search/Search";
 import Splash from "./screens/Splash/Splash";
 import { useState, useEffect } from "react";
 import SignUpScreen from "./screens/SignUp/SignUp";
+import CreateForm from "./components/CreateForm/CreateForm";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -32,6 +33,9 @@ const App = () => {
         </Route>
         <Route path="/sign-up">
           <SignUpScreen setUser={setUser} />
+        </Route>
+        <Route path="/create">
+          <CreateForm setUser={setUser} />
         </Route>
         <Route path="/hobbies">
           <Hobbies setUser={setUser} />
