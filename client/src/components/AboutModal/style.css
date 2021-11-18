@@ -82,7 +82,7 @@
     background-color: initial;
   }
 
-  .modal-container {
+  .modal-container__info {
     flex-flow: column nowrap;
   }
 
