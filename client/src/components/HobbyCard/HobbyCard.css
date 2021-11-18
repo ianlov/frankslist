@@ -44,7 +44,7 @@
   margin-right: 3%;
 }
 
-.info {
+.hobbyinfo {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -80,7 +80,7 @@
   font-size: large;
 }
 
-.test {
+.hobbytest {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

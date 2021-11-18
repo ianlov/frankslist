@@ -7,11 +7,6 @@
   height: 50px;
 }
 
-.nav__logo {
-  margin-right: 1vw;
-  text-decoration: none;
-}
-
 .nav__ul {
   list-style: none;
   display: flex;
@@ -26,6 +21,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav__logo {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 1vw;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__logo__img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav__right {
