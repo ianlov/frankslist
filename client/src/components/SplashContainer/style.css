@@ -129,6 +129,15 @@
   margin-top: 10px;
 }
 
+.head__info1 > img,
+.head__info2 > img,
+.head__info3 > img,
+.head__info1,
+.head__info2,
+.head__info3 {
+  transition: 0.8s;
+}
+
 .splashBody {
   display: flex;
   flex-direction: column;
@@ -147,6 +156,7 @@
   max-width: 930px;
   object-fit: cover;
   object-position: center bottom;
+  transition: 0.8s;
 }
 
 .body__featured > h3 * {
@@ -184,6 +194,7 @@
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  transition: 0.8s;
 }
 
 .body__categories > div > div > div {
@@ -208,10 +219,12 @@
   opacity: 0;
   transition: 0.8s;
   background-color: rgba(0, 0, 0, 0);
-  width: 100%;
+  width: 300px;
   height: 200px;
   border-radius: 20px;
   display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .overlayText__h3 {
@@ -224,6 +237,7 @@
 .overlayText:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 90px;
 }
 
 @keyframes fadein {
@@ -294,6 +308,9 @@
     width: 100%;
     height: auto;
     border-radius: 0;
+  }
+  .overlayText {
+    width: 100%;
   }
 }
 
