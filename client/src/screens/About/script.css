@@ -3,16 +3,17 @@
   height: 274px;
   width: auto;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .about-container > p,
 .about-container__card > p {
   font-size: 30px;
   margin: -20px auto;
-  background-color: #d4a373;
+  background-color: #F6C117;
   border: none;
   border-radius: 20px;
-  color: white;
+  color: #1F1F1F;
   filter: drop-shadow(0 2px 3px gray);
   cursor: pointer;
   padding: 0 10px 0 10px;
