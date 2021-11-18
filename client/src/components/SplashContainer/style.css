@@ -176,12 +176,13 @@
   margin: 5px;
 }
 
-.body__categories > div {
+.body__categories > div > div {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
-.body__categories > div > div > img {
+.body__categories > div > div > div > img {
   height: 200px;
   width: 300px;
   object-fit: cover;
@@ -275,14 +276,15 @@
   .head__info1 > img {
     width: 100%;
     height: auto;
+    border-radius: 0;
   }
   .head__info3__box,
   .head__info1__box {
-    margin: -23px -322px 0 62px;
+    margin: -23px -262px 0 62px;
   }
 
   .head__info2__box {
-    margin: -29px 29px 0 -289px;
+    margin: -14px 39px 0 -239px;
   }
 
   .head__info3__box,
@@ -308,7 +310,11 @@
   .head__info1__box > p {
     font-size: 12px;
   }
-  .body__categories > div > div > img {
+
+  .body__categories > div > div {
+    justify-content: center;
+  }
+  .body__categories > div > div > div > img {
     width: 100%;
   }
 }

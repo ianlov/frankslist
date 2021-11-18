@@ -4,11 +4,14 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import * as service from "./splashservices";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import * as fetchRequest from "../../services/hobbies";
 
 const SplashContainer = () => {
   const [featuredFocus, setFeaturedFocus] = useState(service.carouselArray[0]);
   const [count, setCount] = useState(0);
   const [toggleTransition, setTransition] = useState(false);
+
+  // console.log(fetchRequest.getHobbies());
 
   const handleForward = () => {
     setTransition(true);
@@ -140,35 +143,47 @@ const SplashContainer = () => {
           <div>
             <h3>Outdoor Hobbies</h3>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                alt=""
-              />
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
           <div>
             <h3>Indoor Hobbies</h3>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
-                alt=""
-              />
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </article>
