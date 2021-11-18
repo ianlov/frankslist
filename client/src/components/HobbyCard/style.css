@@ -6,6 +6,7 @@
   margin: 20px auto 20px 100px;
   border: solid #A9A9A9 1px;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .hobby-card__image-box {

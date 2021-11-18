@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout/Layout";
 import HobbyCard from "../../components/HobbyCard/HobbyCard";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const hobbies = [
     {
@@ -332,10 +333,12 @@ const Hobbies = () => {
         <Layout>
             <h1 className="search-title">{search ? `Search results for ${search}` : `Showing All Hobbies`}</h1>
             {hobbies.map((hobby, idx) => (
-                <HobbyCard
-                    key={idx}
-                    hobby={hobby}
-                />
+                <Link className="link" >
+                    <HobbyCard
+                        key={idx}
+                        hobby={hobby}
+                    />
+                </Link>
             ))}
         </Layout>
     )
