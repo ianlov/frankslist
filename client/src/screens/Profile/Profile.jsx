@@ -54,6 +54,16 @@ function Profile() {
                   <h3>Poker</h3>
               </div>
               </div>
+
+              <div className='content'>
+                <div className='content-overlay'></div>
+                <img className='pool__img' src='https://i.imgur.com/3nszJ8u.jpg' />
+              <div className='hover__text fadeIn__top'>
+                  <h3>Billiards</h3>
+                  
+              </div>
+              </div>
+              
               </div>
         </div>
         <div className='bottom__right'>
@@ -85,6 +95,15 @@ function Profile() {
               </div>
               </div>
             
+              <div className='content'>
+                <div className='content-overlay'></div>
+                <img className='pool__img' src='https://i.imgur.com/3nszJ8u.jpg' />
+              <div className='hover__text fadeIn__top'>
+                  <h3>Billiards</h3>
+                  
+              </div>
+              </div>
+              
             </div>
         </div>
         </div>

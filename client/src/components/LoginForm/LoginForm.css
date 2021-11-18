@@ -25,9 +25,13 @@
   margin-bottom: -20px;
 }
 
+.forgot {
+  margin: 0px;
+}
+
 
 .btn__2 {
-  margin: 5px 0 -15px 0;
+  margin: 30px 105px 20px 105px;
   background-color: #2d251d;
   border: none;
   border-radius: 20px;
@@ -38,7 +42,7 @@
 }
 
 .btn__3 {
-  margin: -10px 0;
+  margin: 0 105px 20px 105px;
   background-color: #3db559;
   border: none;
   border-radius: 20px;
@@ -46,4 +50,22 @@
   width: 140px;
   color: white;
   filter: drop-shadow(0 2px 3px gray);
+}
+
+.member {
+  margin: 15px;
+  padding: 0 100px 0 115px;
+}
+
+.input__1 {
+  margin: 5px 100px;
+}
+
+.input__2 {
+  margin: 5px 100px;
+  padding: 0 0 0 0; 
+}
+
+.login__header {
+  margin: 0px;
 }
