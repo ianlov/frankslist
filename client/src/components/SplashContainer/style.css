@@ -115,7 +115,7 @@
   animation: leftappear 700ms 1 linear;
 }
 
-.head__info3__box > button {
+.head__info3__boxButton {
   background-color: #d4a373;
   border: none;
   border-radius: 20px;
@@ -125,6 +125,8 @@
   filter: drop-shadow(0 2px 3px gray);
   justify-self: center;
   align-self: center;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .body {
@@ -137,7 +139,7 @@
 .body__featured > div > img {
   border-radius: 20px;
   height: 500px;
-  width: 55vw;
+  width: 75vw;
   max-width: 930px;
   object-fit: cover;
   object-position: center bottom;

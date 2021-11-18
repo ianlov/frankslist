@@ -2,7 +2,8 @@ import "./style.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import * as service from "./splashservices";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SplashContainer = () => {
   const [featuredFocus, setFeaturedFocus] = useState(service.carouselArray[0]);
@@ -85,7 +86,9 @@ const SplashContainer = () => {
               repudiandae dolorem optio distinctio eos et eligendi est,
               architecto obcaecati, voluptatum explicabo?
             </p>
-            <button>Get Started</button>
+            <Link to="/sign-in">
+              <button className="head__info3__boxButton">Get Started</button>
+            </Link>
           </div>
           <img
             src="https://images.unsplash.com/photo-1615310748170-29d7088865ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
