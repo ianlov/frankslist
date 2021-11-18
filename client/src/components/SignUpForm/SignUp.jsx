@@ -3,7 +3,7 @@ import './SignUp.css'
 import { signUp } from '../../services/users'
 import { useHistory } from 'react-router-dom'
 
-const SignUp = () => {
+const SignUp = (props) => {
   const history = useHistory()
 
   const [form, setForm] = useState({

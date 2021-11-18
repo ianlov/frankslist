@@ -1,10 +1,10 @@
-import "./style.css";
+import "./navbar.css";
 import Search from "../Search/Search";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="container">
+    <nav className="navcontainer">
       <div className="nav__left">
         <Link to="/">
           <h1 className="nav__logo">frankslist</h1>
@@ -24,12 +24,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="/sign-in">
               <a>Log in</a>
             </Link>
           </li>
         </ul>
-        <Link to="/sign">
+        <Link to="/sign-up">
           <button className="nav__button">Sign Up</button>
         </Link>
       </div>
