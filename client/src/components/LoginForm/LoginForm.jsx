@@ -57,12 +57,12 @@ const LogIn = (props) => {
 <>
   <div className="box">
     <section className="logincontainer">
-      <div className="loginheader">Login</div>
+      <div className="login__header">Login</div>
           <form onSubmit={onSignIn} className="form">
 
             <div className="username">
                 <label className="text__signin__1">Email</label>
-              <input
+              <input className="input__1"
                 required
                   type="text"
                   name="email"
@@ -74,7 +74,7 @@ const LogIn = (props) => {
 
             <div className="password">
                 <label className="text__signin__2">Password</label>
-              <input
+              <input className ="input__2"
                 required
                 name="password"
                 value={password}
@@ -89,7 +89,7 @@ const LogIn = (props) => {
             </div>
           </form>
           
-            <h6>Not a member yet?</h6>
+            <h6 className="member">Not a member yet?</h6>
             
             <div>
                 <button className="btn__3" type="submit">Create New Account</button>
