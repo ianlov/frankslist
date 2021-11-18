@@ -3,11 +3,12 @@ import "./App.css";
 import About from "./screens/About/About";
 import Create from "./screens/Create/Create";
 import Detail from "./screens/Detail/Detail";
-import LoginSignUp from "./screens/LoginSignUp/LoginSignUp";
+import Login from "./screens/Login/Login";
 import Profile from "./screens/Profile/Profile";
 import Hobbies from "./screens/Search/Search";
 import Splash from "./screens/Splash/Splash";
 import { useState, useEffect } from "react";
+import SignUpScreen from "./screens/SignUp/SignUp";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -27,7 +28,10 @@ const App = () => {
           <Splash user={user} />
         </Route>
         <Route path="/sign-in">
-          <LoginSignUp setUser={setUser} />
+          <Login setUser={setUser} />
+        </Route>
+        <Route path="/sign-up">
+          <SignUpScreen setUser={setUser} />
         </Route>
         <Route path="/hobbies">
           <Hobbies setUser={setUser} />
