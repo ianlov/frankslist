@@ -50,7 +50,7 @@ const CreateForm = (props) => {
     <>
       <div className="box">
         <section className="container__1">
-          <div className="header">Create A Hobby</div>
+          <div className="header__3">Create A Hobby</div>
           
     {/* Didn't pass through any props
     
