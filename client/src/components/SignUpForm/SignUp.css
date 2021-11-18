@@ -7,29 +7,59 @@
   margin-right: auto;
   margin-bottom: 100px;
   width: 350px;
+}
 
+.header__2 {
+  margin: 0px 130px 30px 120px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.input__su__1{
+  margin: 5px 100px;
+}
+
+.input__su__2{
+  margin: 5px 100px;
+}
+
+.input__su__3{
+  margin: 5px 100px;
+}
+
+.input__su__4{
+  margin: 5px 100px;
 }
 
 .text__signup__1 {
   margin: 15px 0 5px 0;
       text-align: left;
       padding: 0 110px;
+      font-size: 12px;
 }
 
 .text__signup__2 {
   margin: 15px 0 5px 0;
       text-align: left;
       padding: 0 110px;
+      font-size: 12px;
 }
 
 .text__signup__3 {
   margin: 30px 0 5px 0;
       text-align: left;
       padding: 0 110px;
+      font-size: 12px;
+}
+.text__signup__4 {
+  margin: 30px 0 5px 0;
+  text-align: left;
+  padding: 0 110px;
+  font-size: 12px;
 }
 
 .btn__4 {
-  margin: 30px 0;
+  margin: 30px 0 0 100px;
   background-color: #3db559;
   border: none;
   border-radius: 20px;

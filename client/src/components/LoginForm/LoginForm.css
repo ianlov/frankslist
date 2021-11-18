@@ -11,20 +11,22 @@
 
 .login__header {
   margin: 0px 150px 30px 150px;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .text__signin__1 {
   margin: 15px 0 5px 0;
       text-align: left;
       padding: 0 110px;
+      font-size: 12px;
 }
 
 .text__signin__2 {
   margin: 20px 0 5px 0;
       text-align: left;
       padding: 0 110px;
+      font-size: 12px;
 }
 
 .password {
@@ -69,5 +71,4 @@
 
 .input__2 {
   margin: 5px 100px;
-  padding: 0 0 0 0; 
 }
