@@ -39,7 +39,7 @@ const App = () => {
           <About setUser={setUser} />
         </Route>
         <Route path="/newhobby">
-          {user ? <Create user={user} /> : <Redirect to="/sign-up" />}
+          {user ? <Create user={user} /> : <Redirect to="/sign-in" />}
   </Route>
         <Route path="/myprofile">
           <Profile/>

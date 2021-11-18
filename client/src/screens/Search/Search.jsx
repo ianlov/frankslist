@@ -1,7 +1,13 @@
 import Layout from "../../components/Layout/Layout";
+import HobbyCard from "../../components/HobbyCard/HobbyCard"
+
 
 const Hobbies = () => {
-  // return <Layout user={props.user}></Layout>;
+    return (
+        <Layout>
+            <HobbyCard />
+        </Layout>
+    )
 };
 
 export default Hobbies;
