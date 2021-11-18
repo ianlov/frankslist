@@ -60,11 +60,11 @@ const SignUp = (props) => {
 <>
   <div className="box">
     <section className="container__2">
-      <div className="header">Sign Up</div>
+      <div className="header__2">Sign Up</div>
           <form className="form" onSubmit={onSignUp}>
 
               <label className="text__signup__1">Create Username</label>
-                <input
+                <input className="input__su__1"
                   required
                   type="text"
                   name="username"
@@ -73,7 +73,7 @@ const SignUp = (props) => {
                   onChange={handleChange}
               />
               <label className="text__signup__2">Email address</label>
-                <input
+                <input className="input__su__2"
                   required
                   type="email"
                   name="email"
@@ -82,8 +82,8 @@ const SignUp = (props) => {
                   onChange={handleChange}
             />
 
-              <label className="text__signup__2">Password</label>
-                <input
+              <label className="text__signup__3">Password</label>
+                <input className="input__su__3"
                   required
                   name="password"
                   value={password}
@@ -92,8 +92,8 @@ const SignUp = (props) => {
                   onChange={handleChange}
               />
               
-              <label className="text__signup__3">Password Confirmation</label>
-                <input
+              <label className="text__signup__4">Password Confirmation</label>
+                <input className="input__su__4"
                   required
                   name='passwordConfirmation'
                   value={passwordConfirmation}
@@ -104,9 +104,9 @@ const SignUp = (props) => {
                     {renderError()}
           </form>
 
-            <div>
+            {/* <div>
               <button className="btn__4" type="submit">Create New Account</button>
-            </div>
+            </div> */}
           
     </section> 
   </div>
