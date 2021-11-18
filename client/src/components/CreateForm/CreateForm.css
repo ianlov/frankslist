@@ -8,6 +8,7 @@
   width: 350px;
   height: auto;
   font-family: 'Roboto', sans-serif;
+  border-radius: 20px;
 }
 
 .header__3 {
@@ -31,6 +32,7 @@
   width: 140px;
   color: white;
   filter: drop-shadow(0 2px 3px gray);
+  border-radius: 20px;
 }
 
 .text__hobby__1 {
@@ -66,6 +68,7 @@ padding: 10px 0 10px 110px;
 padding: 0 20px;
 text-align: center;
 margin: 0 80px 0 80px;
+border-radius: 5px;
 }
 
 .form {
@@ -76,7 +79,8 @@ margin: 0 80px 0 80px;
   padding: 0 55px;
   margin: 0 80px 0 80px;
   text-align: left;
-  background-color: rgba(196, 196, 196, 0.379)
+  background-color: rgba(196, 196, 196, 0.379);
+  border-radius: 5px;
 }
 
 .risk  {
@@ -84,12 +88,14 @@ margin: 0 80px 0 80px;
   margin: 0 80px 0 80px;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.379);
+  border-radius: 5px;
 }
 
 .textbox {
   padding: 0px 10px;
   margin: 0 80px 0 80px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .price {

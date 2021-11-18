@@ -36,7 +36,7 @@ const SignUp = (props) => {
         password: '',
         passwordConfirmation: '',
         isError: true,
-        errorMsg: 'Sign Up Details Invalid',
+        errorMsg: 'Details Invalid!!',
       })
     }
   }
