@@ -99,7 +99,7 @@ const SplashContainer = () => {
           />
         </article>
       </section>
-      <section className="body">
+      <section className="splashBody">
         <article className="body__featured">
           <h3>Featured Hobbies</h3>
           <div>
@@ -144,10 +144,12 @@ const SplashContainer = () => {
             <h3>Outdoor Hobbies</h3>
             <div>
               <div>
-                <img
+
+                <img className="category__img"
                   src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
                   alt=""
                 />
+                <h3 className="overlayText">Poker</h3>
               </div>
               <div>
                 <img
