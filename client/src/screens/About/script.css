@@ -3,31 +3,40 @@
   height: 274px;
   width: auto;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .about-container > p,
 .about-container__card > p {
-  font-size: 48px;
-  margin: 10px 0px 10px 0px;
+  font-size: 30px;
+  margin: -20px auto;
+  background-color: #F6C117;
+  border: none;
+  border-radius: 20px;
+  color: #1F1F1F;
+  filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+  padding: 0 10px 0 10px;
 }
 
 .about-container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   margin: 10px 10px 10px 10px;
 }
 
-.about-container h1 {
-  margin-left: 10vw;
+.about-title {
+  text-align: center;
+  margin: 50px auto;
 }
 
 .about-container__card {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
-  margin: 20px auto 20px 10vw;
+  margin: 50px 50px;
 }
 
 .body {
