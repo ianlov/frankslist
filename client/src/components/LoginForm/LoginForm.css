@@ -1,7 +1,7 @@
 .logincontainer{
   padding: 40px 0;
   background-color: white;
-  margin-top: 100px;
+  margin-top: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -9,16 +9,24 @@
   width: 350px;
 }
 
+.login__header {
+  margin: 0px 150px 30px 150px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
 .text__signin__1 {
   margin: 15px 0 5px 0;
       text-align: left;
       padding: 0 110px;
+      font-size: 12px;
 }
 
 .text__signin__2 {
   margin: 20px 0 5px 0;
       text-align: left;
       padding: 0 110px;
+      font-size: 12px;
 }
 
 .password {
@@ -26,7 +34,7 @@
 }
 
 .forgot {
-  margin: 0px;
+  margin: 0px 110px 0px 150px;
 }
 
 
@@ -63,9 +71,4 @@
 
 .input__2 {
   margin: 5px 100px;
-  padding: 0 0 0 0; 
-}
-
-.login__header {
-  margin: 0px;
 }
