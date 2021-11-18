@@ -49,11 +49,11 @@ const About = () => {
       case "paul":
         setFocus({
           name: "Paul Pardo",
-          bio: "grabby. Barry LANDS on a ball and COLLAPSES. - JS REVISIONS 8/13/07 25. BARRY Oh my sweet lord of bees. JACKSON Hey, candy brain, get off there! Barry attempts to pulls his legs off, but they stick. BARRY Problem! A tennis shoe and a hand ENTER FRAME. The hand picks up the ball with Barry underneath it. BARRY (CONT'D) Guys! BUZZ This could be bad. JACKSON Affirmative. Vanessa walks back to the service line, BOUNCES the ball. Each time it BOUNCES, the other bees cringe and GASP. ANGLE ON: Barry, terrified. Pure dumb luck, he",
+          bio: "Hey guys I’m 24 and recently graduated from University of South Florida. I have a degree in Economics and Information Studies but had a change of heart. I am pursuing a career in software development. My hobbies include bodybuilding, training Brazilian Jiu Jitsu, playing video games (a lot of league over the years) and spending time with my girlfriend and her dog Chubbie.",
           img_url:
-            "https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png",
-          github: "",
-          linkedin: "",
+            "https://i.imgur.com/4xcnBUZ.jpg",
+          github: "https://github.com/pauljpardo",
+          linkedin: "https://www.linkedin.com/in/paul-j-pardo/",
         });
         break;
       case "vince":
@@ -115,8 +115,8 @@ const About = () => {
         </div>
         <div className="about-container__card" id="paul" onClick={toggleModal}>
           <img
-            src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png"
-            alt="Marquel"
+            src="https://i.imgur.com/4xcnBUZ.jpg"
+            alt="Paul"
             id="paul"
           />
           <p>Paul Pardo</p>
