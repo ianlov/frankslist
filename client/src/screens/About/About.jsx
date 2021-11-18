@@ -29,7 +29,7 @@ const About = () => {
       case "ian":
         setFocus({
           name: "Ian Lovice",
-          bio: "I am a former Firefighter with a background in Biosystems Engineering. I enjoy brazilian jiu jitu, weightlifting, kayaking, and spending time with my finance. Connect with me on Github or Linkedin!",
+          bio: "I am a former Firefighter with a background in Biosystems Engineering. I enjoy brazilian jiu jitu, weightlifting, kayaking, and spending time with my fiance. Connect with me on Github or Linkedin!",
           img_url:
             "https://i.imgur.com/Cf9UTHj.jpg",
           github: "https://github.com/ianlov",
@@ -74,8 +74,17 @@ const About = () => {
 
   return (
     <Layout>
+      <AboutModal 
+        setIsVisible={setIsVisible}
+        isVisible={isVisible}
+        name={focus.name}
+        bio={focus.bio}
+        github={focus.github}
+        linkedin={focus.linkedin}
+        image={focus.img_url}
+      />
+      <h1 className="about-title">Meet the Developers</h1>
       <div className="about-container">
-        <h1>Meet the Developers</h1>
         <div
           className="about-container__card"
           id="marquel"
@@ -86,8 +95,7 @@ const About = () => {
             alt="Marquel"
             id="marquel"
           />
-          <p id="marquel">MARQUEL SEARS</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
+          <p>Marquel Sears</p>
         </div>
         <div className="about-container__card" id="ian" onClick={toggleModal}>
           <img
@@ -95,8 +103,7 @@ const About = () => {
             alt="Ian"
             id="ian"
           />
-          <p id="ian">IAN LOVICE</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
+          <p>Ian Lovice</p>
         </div>
         <div className="about-container__card" id="ricky" onClick={toggleModal}>
           <img
@@ -104,8 +111,7 @@ const About = () => {
             alt="Marquel"
             id="ricky"
           />
-          <p id="ricky">RICKY BOYD</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
+          <p>Ricky Boyd</p>
         </div>
         <div className="about-container__card" id="paul" onClick={toggleModal}>
           <img
@@ -113,8 +119,7 @@ const About = () => {
             alt="Marquel"
             id="paul"
           />
-          <p id="paul">PAUL PARDO</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
+          <p>Paul Pardo</p>
         </div>
         <div className="about-container__card" id="vince" onClick={toggleModal}>
           <img
@@ -122,8 +127,7 @@ const About = () => {
             alt="Marquel"
             id="vince"
           />
-          <p id="vince">VINCE ABUYUAN</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
+          <p>Vince Abuyuan</p>
         </div>
       </div>
     </Layout>
