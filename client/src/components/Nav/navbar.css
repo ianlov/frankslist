@@ -9,11 +9,17 @@
 
 .nav__logo {
   margin-right: 1vw;
+  text-decoration: none;
 }
 
 .nav__ul {
   list-style: none;
   display: flex;
+}
+
+.nav__ul > li > a {
+  text-decoration: none;
+  color: white;
 }
 
 .nav__left {
@@ -40,6 +46,7 @@
   width: 140px;
   color: white;
   filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
 }
 
 .hamburger {
