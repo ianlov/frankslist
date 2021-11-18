@@ -1,26 +1,37 @@
-import "./style.css";
+import "./navbar.css";
 import Search from "../Search/Search";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="container">
+    <nav className="navcontainer">
       <div className="nav__left">
-        <h1 className="nav__logo">frankslist</h1>
+        <Link to="/">
+          <h1 className="nav__logo">frankslist</h1>
+        </Link>
         <Search />
       </div>
       <div className="nav__right">
         <ul className="nav__ul">
           <li>
-            <a>All Hobbies</a>
+            <Link to="/hobbies">
+              <a>All Hobbies</a>
+            </Link>
           </li>
           <li>
-            <a>About Us</a>
+            <Link>
+              <a>About Us</a>
+            </Link>
           </li>
           <li>
-            <a>Log in</a>
+            <Link to="/sign-in">
+              <a>Log in</a>
+            </Link>
           </li>
         </ul>
-        <button className="nav__button">Sign Up</button>
+        <Link to="/sign-up">
+          <button className="nav__button">Sign Up</button>
+        </Link>
       </div>
 
       <div className="hamburger">

@@ -20,7 +20,7 @@ const CreateForm = (props) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target
-    if (name !== low || name !== high) {
+    if (name !== hobby.price.low || name !== hobby.price.high) {
       setHobby({
         ...hobby,
         [name]: value,
@@ -90,7 +90,7 @@ const CreateForm = (props) => {
             <input
               className="input-price"
               placeholder="Price Low"
-              value={}
+              value={hobby.price}
               name="low"
               type="number"
               required
@@ -101,7 +101,7 @@ const CreateForm = (props) => {
             <input
               className="input-price"
               placeholder="Price High"
-              value={}
+              value={hobby.price}
               name="high"
               type="number"
               required
@@ -113,7 +113,7 @@ const CreateForm = (props) => {
               className="textbox"
               rows={8}
               placeholder="Description"
-              value={}
+              value={hobby.description}
               name="description"
               type="text"
               required
