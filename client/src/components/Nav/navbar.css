@@ -21,6 +21,10 @@
   color: white;
 }
 
+.nav__ul > li > a:hover {
+  text-decoration: underline;
+}
+
 .nav__left {
   display: flex;
   justify-content: center;
@@ -64,6 +68,10 @@
   filter: drop-shadow(0 2px 3px gray);
   cursor: pointer;
   transition: 0.8s;
+}
+
+.nav__button:hover {
+  filter: drop-shadow(0 2px 3px gray) brightness(1.05)
 }
 
 .hamburger {
