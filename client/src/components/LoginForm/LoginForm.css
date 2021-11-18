@@ -8,6 +8,7 @@
   margin-bottom: auto;
   width: 350px;
   font-family: 'Roboto', sans-serif;
+  border-radius: 20px;
 }
 
 .login__header {
@@ -68,8 +69,21 @@
 
 .input__1 {
   margin: 5px 100px;
+  border-radius: 5px;
 }
 
 .input__2 {
   margin: 5px 100px;
+  border-radius: 5px;
+}
+
+.danger {
+  margin: 30px 105px 20px 105px;
+  background-color: #2d251d;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
 }

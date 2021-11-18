@@ -79,11 +79,11 @@ const CreateForm = (props) => {
     
     */}
           <select className="risk" id="risk">
-            <option value="option 1">1 (Safe)</option>
-            <option value="option 2">2 (Kind Of Safe)</option>
-            <option value="option 3">3 (Median Safe/Dangerous)</option>
-            <option value="option 4">4 (Kind Of Dangerous)</option>
-            <option value="option 5">5 (Dangerous)</option>
+            <option value="1">1 (Safe)</option>
+            <option value="2">2 (Kind Of Safe)</option>
+            <option value="3">3 (Median Safe/Dangerous)</option>
+            <option value="4">4 (Kind Of Dangerous)</option>
+            <option value="5">5 (Dangerous)</option>
             </select>
 
           <h5 className="text__hobby__3">Price Low</h5>
