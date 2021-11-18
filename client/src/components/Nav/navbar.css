@@ -63,6 +63,7 @@
   color: white;
   filter: drop-shadow(0 2px 3px gray);
   cursor: pointer;
+  transition: 0.8s;
 }
 
 .hamburger {

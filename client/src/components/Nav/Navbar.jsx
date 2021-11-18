@@ -40,7 +40,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <Link to="/sign-in">
+          <Link to="/sign-up">
             <button className="nav__button">Sign Up</button>
           </Link>
         </div>
