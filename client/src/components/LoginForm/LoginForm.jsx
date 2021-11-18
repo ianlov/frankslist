@@ -83,7 +83,7 @@ const LogIn = (props) => {
                 onChange={handleChange}
               />
               
-              <h6 classname="forgot">Forgot Password?</h6>
+              <h6 className="forgot">Forgot Password?</h6>
               
               {renderError()}
             </div>
