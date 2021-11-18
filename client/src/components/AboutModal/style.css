@@ -60,7 +60,7 @@
   overflow-y: scroll;
 }
 
-.bio > h1, p {
+.bio > h1, .bio > p {
   padding: 0px 20px 0px 20px;
 }
 

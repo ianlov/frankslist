@@ -1,4 +1,6 @@
-h3 {
+.body__featured > h3,
+.body__categories > h3,
+.body__categories > div > h3 {
   color: #d4a373;
 }
 
