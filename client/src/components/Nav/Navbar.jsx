@@ -6,8 +6,15 @@ const Navbar = () => {
   return (
     <nav className="navcontainer">
       <div className="nav__left">
-        <Link to="/">
-          <h1 className="nav__logo">frankslist</h1>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <div className="nav__logo">
+            <img
+              className="nav__logo__img"
+              src="https://images.unsplash.com/photo-1624300603538-1207400f4116?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+              alt=""
+            />
+            <h1>frankslist</h1>
+          </div>
         </Link>
         <Search />
       </div>

@@ -57,7 +57,7 @@ const LogIn = (props) => {
 <>
   <div className="box">
     <section className="logincontainer">
-      <div className="loginheader">Login</div>
+      <div className="login__header">Login</div>
           <form onSubmit={onSignIn} className="form">
 
             <div className="username">

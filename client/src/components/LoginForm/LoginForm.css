@@ -25,6 +25,10 @@
   margin-bottom: -20px;
 }
 
+.forgot {
+  margin: 0px;
+}
+
 
 .btn__2 {
   margin: 30px 105px 20px 105px;
@@ -60,4 +64,8 @@
 .input__2 {
   margin: 5px 100px;
   padding: 0 0 0 0; 
+}
+
+.login__header {
+  margin: 0px;
 }

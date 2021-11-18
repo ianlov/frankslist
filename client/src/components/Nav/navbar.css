@@ -7,19 +7,37 @@
   height: 50px;
 }
 
-.nav__logo {
-  margin-right: 1vw;
-}
-
 .nav__ul {
   list-style: none;
   display: flex;
+}
+
+.nav__ul > li > a {
+  text-decoration: none;
+  color: white;
 }
 
 .nav__left {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav__logo {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 1vw;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__logo__img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav__right {
@@ -40,6 +58,7 @@
   width: 140px;
   color: white;
   filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
 }
 
 .hamburger {
