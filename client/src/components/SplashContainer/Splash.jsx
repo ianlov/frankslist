@@ -11,7 +11,7 @@ const SplashContainer = () => {
   const [count, setCount] = useState(0);
   const [toggleTransition, setTransition] = useState(false);
 
-  // console.log(fetchRequest.getHobbies());
+  console.log(fetchRequest.getHobbies());
 
   const handleForward = () => {
     setTransition(true);
@@ -144,12 +144,14 @@ const SplashContainer = () => {
             <h3>Outdoor Hobbies</h3>
             <div>
               <div>
-
-                <img className="category__img"
+                <div className="overlayText">
+                  <h3 className="overlayText__h3">Poker</h3>
+                </div>
+                <img
+                  className="category__img"
                   src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
                   alt=""
                 />
-                <h3 className="overlayText">Poker</h3>
               </div>
               <div>
                 <img
