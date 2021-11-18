@@ -20,6 +20,7 @@ body {
   .profile__info > p {
     max-width: fit-content;
     padding: 7px 0px;
+    font-weight:normal;
   }
   
   .vl {
