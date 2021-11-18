@@ -48,7 +48,7 @@
   border-radius: 10px;
 }
 
-.bio {
+.modal-container__info__bio {
   display: flex;
   flex-flow: column nowrap;
   width: 50%;
@@ -61,12 +61,24 @@
   overflow-y: scroll;
 }
 
-.bio > h1, .bio > p {
+.modal-container__info__bio > h1, .modal-container__info__bio > p {
   padding: 0px 20px 0px 20px;
 }
 
-.bio > p {
+.modal-container__info__bio > p {
   font-size: 18px;
+}
+
+.modal-container__info__bio__links {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px 20px 0px 20px;
+}
+
+.modal-container__info__bio__links img{
+  height: 30px;
+  width: auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -92,7 +104,7 @@
     width: 0;
   }
 
-  .bio {
+  .modal-container__info__bio {
     width: 100%;
     height: 100%;
     max-height: 100%;

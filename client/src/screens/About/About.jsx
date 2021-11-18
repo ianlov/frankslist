@@ -29,11 +29,11 @@ const About = () => {
       case "ian":
         setFocus({
           name: "Ian Lovice",
-          bio: "grabby. Barry LANDS on a ball and COLLAPSES. - JS REVISIONS 8/13/07 25. BARRY Oh my sweet lord of bees. JACKSON Hey, candy brain, get off there! Barry attempts to pulls his legs off, but they stick. BARRY Problem! A tennis shoe and a hand ENTER FRAME. The hand picks up the ball with Barry underneath it. BARRY (CONT'D) Guys! BUZZ This could be bad. JACKSON Affirmative. Vanessa walks back to the service line, BOUNCES the ball. Each time it BOUNCES, the other bees cringe and GASP. ANGLE ON: Barry, terrified. Pure du",
+          bio: "I am a former Firefighter with a background in Biosystems Engineering. I enjoy brazilian jiu jitu, weightlifting, kayaking, and spending time with my finance. Connect with me on Github or Linkedin!",
           img_url:
-            "https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png",
-          github: "",
-          linkedin: "",
+            "https://i.imgur.com/Cf9UTHj.jpg",
+          github: "https://github.com/ianlov",
+          linkedin: "https://www.linkedin.com/in/ian-lovice/",
         });
         break;
       case "ricky":
@@ -87,16 +87,16 @@ const About = () => {
             id="marquel"
           />
           <p id="marquel">MARQUEL SEARS</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} />
+          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
         </div>
         <div className="about-container__card" id="ian" onClick={toggleModal}>
           <img
-            src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png"
-            alt="Marquel"
+            src="https://i.imgur.com/Cf9UTHj.jpg"
+            alt="Ian"
             id="ian"
           />
           <p id="ian">IAN LOVICE</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} />
+          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
         </div>
         <div className="about-container__card" id="ricky" onClick={toggleModal}>
           <img
@@ -105,7 +105,7 @@ const About = () => {
             id="ricky"
           />
           <p id="ricky">RICKY BOYD</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} />
+          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
         </div>
         <div className="about-container__card" id="paul" onClick={toggleModal}>
           <img
@@ -114,7 +114,7 @@ const About = () => {
             id="paul"
           />
           <p id="paul">PAUL PARDO</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} />
+          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
         </div>
         <div className="about-container__card" id="vince" onClick={toggleModal}>
           <img
@@ -123,7 +123,7 @@ const About = () => {
             id="vince"
           />
           <p id="vince">VINCE ABUYUAN</p>
-          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} />
+          <AboutModal isVisible={isVisible} name={focus.name} bio={focus.bio} github={focus.github} linkedin={focus.linkedin} image={focus.img_url} />
         </div>
       </div>
     </Layout>
