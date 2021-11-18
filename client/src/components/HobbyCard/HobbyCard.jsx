@@ -7,14 +7,14 @@ const HobbyCard = () => {
       </div>
       <div className="cards">
         <div className="card">
-          <div className="test">
+          <div className="hobbytest">
             <img
               className="hobby__pic"
               src="https://i.imgur.com/BHeG8or.jpg?1"
             />
             <button className="dummy">DUMMY CLICK</button>
           </div>
-          <div className="info">
+          <div className="hobbyinfo">
             <div className="header">
               <div className="activity">
                 <h1>MIKE NEZZER MIKE NEZZER</h1>
