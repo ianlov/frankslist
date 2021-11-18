@@ -10,9 +10,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.header {
+.header__3 {
   font-family: 'Roboto', sans-serif, bold;
-  font-size: 30px;
+  margin: 0px 50px 30px 90px;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .description {
@@ -21,7 +23,7 @@
 }
 
 .btn__1 {
-  margin: 15px 0;
+  margin: 20px 105px;
   background-color: #CCD5AE;
   border: none;
   border-radius: 20px;
@@ -34,29 +36,25 @@
 .text__hobby__1 {
   margin: 25px 20px 5px 20px;
   text-align: left;
-  padding: 5px 60px;
-
+  padding: 0px 60px;
 }
 
 .text__hobby__2 {
   margin: 10px 20px 5px 20px;
   text-align: left;
-  padding: 5px 60px;
-
+  padding: 0px 60px;
 }
 
 .text__hobby__3 {
   margin: 10px 20px 5px 20px;
   text-align: left;
-  padding: 5px 60px;
-
+  padding: 0px 60px;
 }
 
 .text__hobby__4 {
   margin: 25px 20px 5px 20px;
   text-align: left;
-  padding: 5px 60px;
-
+  padding: 0px 60px;
 }
 
 .in-out {
@@ -67,6 +65,7 @@ padding: 10px 0 10px 110px;
 .input-price {
 padding: 0 20px;
 text-align: center;
+margin: 0 80px 0 80px;
 }
 
 .form {
@@ -75,18 +74,21 @@ text-align: center;
 
 .in-outdoor {
   padding: 0 55px;
+  margin: 0 80px 0 80px;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.379)
 }
 
 .risk  {
   padding: 0px;
+  margin: 0 80px 0 80px;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.379);
 }
 
 .textbox {
-  padding: 0px 25px;
+  padding: 0px 10px;
+  margin: 0 80px 0 80px;
   text-align: center;
 }
 
