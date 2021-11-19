@@ -1,4 +1,4 @@
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import About from "./screens/About/About";
 import Detail from "./screens/Detail/Detail";
@@ -10,7 +10,6 @@ import { useState, useEffect } from "react";
 import SignUpScreen from "./screens/SignUp/SignUp";
 import CreateScreen from "./screens/Create/Create";
 import { verifyUser } from "./services/users";
-import Layout from "./components/Layout/Layout";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -21,8 +20,7 @@ const App = () => {
       user ? setUser(user) : setUser(null);
     };
     fetchUser();
-    console.log(user ? true : false);
-  }, []);
+  }, [user]);
 
   return (
     <div className="App">

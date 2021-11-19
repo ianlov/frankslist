@@ -34,20 +34,20 @@ const Navbar = (props) => {
           <ul className="nav__ul">
             <li>
               <Link to="/hobbies">
-                <a>All Hobbies</a>
+                <p>All Hobbies</p>
               </Link>
             </li>
             <li>
               <Link to="/aboutus">
-                <a>About Us</a>
+                <p>About Us</p>
               </Link>
             </li>
             <li>
               {props.user ? (
-                <a onClick={handleSignOut}>Log Out</a>
+                <p onClick={handleSignOut}>Log Out</p>
               ) : (
                 <Link to="/sign-in">
-                  <a>Log In</a>
+                  <p>Log In</p>
                 </Link>
               )}
             </li>
@@ -75,7 +75,7 @@ const Navbar = (props) => {
               to="/hobbies"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <a>All Hobbies</a>
+              <p>All Hobbies</p>
             </Link>
           </li>
           <li>
@@ -83,16 +83,24 @@ const Navbar = (props) => {
               to="/aboutus"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <a>About Us</a>
+              <p>About Us</p>
             </Link>
           </li>
           <li>
-            <Link
-              to="/sign-in"
-              style={{ textDecoration: "none", color: "black" }}
-            >
-              <a>Log in</a>
-            </Link>
+            {props.user ? (
+              <p onClick={handleSignOut}>Log Out</p>
+            ) : (
+              <Link
+                to="/sign-in"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  cursor: "pointer",
+                }}
+              >
+                <p>Log in</p>
+              </Link>
+            )}
           </li>
         </ul>
         {props.user ? (
