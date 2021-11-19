@@ -1,11 +1,14 @@
 import CreateForm from "../../components/CreateForm/CreateForm"
+import Layout from "../../components/Layout/Layout";
 
-const Create = () => {
+const CreateScreen = () => {
   return (
     <>
-    <CreateForm />
+      <Layout>
+        <CreateForm />
+      </Layout>
     </>
-  )
-}
+  );
+};
 
-export default Create
+export default CreateScreen;
