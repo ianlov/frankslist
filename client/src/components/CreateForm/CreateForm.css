@@ -23,6 +23,14 @@
   margin: 0px -10px;
 }
 
+.hobby__name {
+  padding: 0px -10px;
+  margin: 0px 80px;
+  border-radius: 5px;
+  padding: 0 20px;
+  text-align: center;
+}
+
 .btn__1 {
   margin: 20px 105px;
   background-color: #CCD5AE;
@@ -36,7 +44,7 @@
 }
 
 .text__hobby__1 {
-  margin: 25px 20px 5px 20px;
+  margin: 12px 20px 5px 20px;
   text-align: left;
   padding: 0px 60px;
 }
@@ -59,12 +67,38 @@
   padding: 0px 60px;
 }
 
+.text__hobby__5 {
+  margin: 25px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
+.text__hobby__6 {
+  margin: 10px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
 .in-out {
 margin: 20px 0 5px 0;
 padding: 10px 0 10px 110px;
 }
 
-.input-price {
+.input-price__1 {
+padding: 0 20px;
+text-align: center;
+margin: 0 80px 0 80px;
+border-radius: 5px;
+}
+
+.input-price__2 {
+padding: 0 20px;
+text-align: center;
+margin: 0 80px 0 80px;
+border-radius: 5px;
+}
+
+.input-image-link {
 padding: 0 20px;
 text-align: center;
 margin: 0 80px 0 80px;
@@ -78,15 +112,15 @@ border-radius: 5px;
 .in-outdoor {
   padding: 0 55px;
   margin: 0 80px 0 80px;
-  text-align: left;
+  text-align: center;
   background-color: rgba(196, 196, 196, 0.379);
   border-radius: 5px;
 }
 
 .risk  {
-  padding: 0px;
+  padding: 0px 30px;
   margin: 0 80px 0 80px;
-  text-align: left;
+  text-align: center;
   background-color: rgba(196, 196, 196, 0.379);
   border-radius: 5px;
 }
