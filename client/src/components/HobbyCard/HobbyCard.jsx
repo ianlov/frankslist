@@ -48,7 +48,7 @@ const HobbyCard = ({ hobby }) => {
         <p>{hobby.rating ? hobby.rating : "N/A"}</p>
         <div className="hobby-card__info__details" >
           <div className="hobby-card__info__details__left" >
-            <p>Indoors</p>
+            <p>Location</p>
             <p>Price</p>
             <p>Risk</p>
           </div>
