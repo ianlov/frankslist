@@ -3,11 +3,11 @@ import { useParams } from "react-router";
 import { getHobby } from "../../services/hobbies";
 import { useEffect, useState } from "react";
 import Related from "../Related/Related";
-import handleRating from "../../utilities/handleRating";
-import handleRisk from "../../utilities/handleRisk";
+import handleRating from "../../utilities/handleRating.js";
+import handleRisk from "../../utilities/handleRisk.js";
 import { deleteHobby } from "../../services/hobbies";
+import EditModal from "../../components/EditModal/EditModal.jsx";
 import { useHistory } from "react-router";
-
 
 const HobbyDetail = () => {
 
@@ -19,7 +19,9 @@ const HobbyDetail = () => {
   }
 
   const [hobby, setHobby] = useState({});
+  const [isVisible, setIsVisible] = useState(false)
   const { id } = useParams();
+  
   useEffect(() => {
     const fetchHobby = async () => {
       const res = await getHobby(id);
@@ -32,6 +34,11 @@ const HobbyDetail = () => {
   
   return (
     <>
+      <EditModal 
+        isVisible={isVisible}
+        setIsVisible={setIsVisible}
+        hobby={hobby}
+      />
       <section className="topAbout">
         <div className="topAbout__left">
           <div className="top__leftTop">
@@ -73,19 +80,10 @@ const HobbyDetail = () => {
           <div className="bottom__left__down">
             <h4>Description</h4>
             <p>{hobby.description}</p>
-            <button className="bottom__edit__button">Edit Hobby</button>
-            <button className="bottom__delete_button" onClick={handleDelete}>Delete Hobby</button>
+            <button className="bottom__edit__button" onClick={() => setIsVisible(!isVisible)}>Edit Hobby</button>
+            <button className="bottom__delete_button"  onClick={() => deleteHobby(hobby._id)}>Delete Hobby</button>
           </div>
         </div>
-        {/* <div className="bottomDetails__right">
-          <p>
-            <strong>Related</strong>
-          </p>
-          <div className="bottom__right__relatedCard">
-            <img src="https://images.unsplash.com/photo-1501116518234-f32f28802bd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" />
-            <p>MMA</p>
-          </div>
-        </div> */}
         <div className="details__related">
           <Related hobbyDetail={hobby} />
         </div>
