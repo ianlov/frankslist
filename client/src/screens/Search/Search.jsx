@@ -2,7 +2,6 @@ import Layout from "../../components/Layout/Layout";
 import HobbyCard from "../../components/HobbyCard/HobbyCard";
 import { getHobbies } from "../../services/hobbies";
 import { useState, useEffect } from "react";
-
 const Hobbies = (props) => {
   const [hobbies, setHobbies] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
