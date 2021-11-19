@@ -9,7 +9,7 @@ export const riskScouter = num => {
     return "Kind of Dangerous"
   } else if (num === 5) {
     return "Dangerous"
-  } else if (num === 9001) {
+  } else if (num > 9000) {
     return "IT'S OVER 9000!!!"
   } 
-} 
+}
