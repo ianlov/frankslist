@@ -4,6 +4,7 @@ import { getHobby } from "../../services/hobbies";
 import { useEffect, useState } from "react";
 import { riskScouter } from "./hobbyservices";
 import Related from "../Related/Related";
+import { deleteHobby } from "../../services/hobbies";
 
 const HobbyDetail = () => {
   const [hobby, setHobby] = useState({});
@@ -64,6 +65,8 @@ const HobbyDetail = () => {
           <div className="bottom__left__down">
             <h4>Description</h4>
             <p>{hobby.description}</p>
+            <button className="bottom__edit__button">Edit Hobby</button>
+            <button className="bottom__delete_button"  onClick={() => deleteHobby(hobby._id)}>Delete Hobby</button>
           </div>
         </div>
         {/* <div className="bottomDetails__right">

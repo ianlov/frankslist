@@ -6,7 +6,6 @@ function ProfileContainer(props) {
 
   return (
     <>
-    <Layout>
       <div className='main__div'>
 
       <div className='left__profile__panel'>
@@ -134,7 +133,6 @@ function ProfileContainer(props) {
         </div>
         </div>
         </div>
-        </Layout>
     </>
   );
 }
