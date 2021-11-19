@@ -1,7 +1,6 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 import About from "./screens/About/About";
-import Create from "./screens/Create/Create";
 import Detail from "./screens/Detail/Detail";
 import Login from "./screens/Login/Login";
 import Profile from "./screens/Profile/Profile";
@@ -9,7 +8,7 @@ import Hobbies from "./screens/Search/Search";
 import Splash from "./screens/Splash/Splash";
 import { useState, useEffect } from "react";
 import SignUpScreen from "./screens/SignUp/SignUp";
-import CreateForm from "./components/CreateForm/CreateForm";
+import CreateScreen from "./screens/Create/Create";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -36,9 +35,6 @@ const App = () => {
         <Route path="/sign-up">
           <SignUpScreen setUser={setUser} />
         </Route>
-        <Route path="/create">
-          <CreateForm setUser={setUser} />
-        </Route>
         <Route path="/hobbies">
           <Hobbies setUser={setUser} />
         </Route>
@@ -49,8 +45,9 @@ const App = () => {
           <About setUser={setUser} />
         </Route>
         <Route path="/newhobby">
-          {user ? <Create user={user} /> : <Redirect to="/sign-in" />}
-  </Route>
+          <CreateScreen setUser={setUser} />
+          {/* {user ? <CreateScreen user={user} /> : <Redirect to="/sign-in" />} */}
+        </Route>
         <Route path="/myprofile">
           <Profile/>
           {/* {user ? <Profile user={user} /> : <Redirect to="/sign-up" />} */}
