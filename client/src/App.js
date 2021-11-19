@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/hobbies">
           <Hobbies user={user} setUser={setUser} />
         </Route>
-        <Route path="/hobby/">
+        <Route path="/hobby/:id">
           <Detail user={user} setUser={setUser} />
         </Route>
         <Route path="/aboutus">
