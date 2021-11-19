@@ -66,6 +66,16 @@ const About = (props) => {
           linkedin: "",
         });
         break;
+      case "frank":
+        setFocus({
+          name: "Frankie",
+          bio: "Hi, I'm a two year old golden retriever and my favorite hobbies are walking, tug-of-war, napping, and staring at people while they eat. I don't know what github and linkedin are.",
+          img_url:
+            "https://i.imgur.com/Lf9k7iE.jpg",
+          github: "https://giphy.com/search/golden-retriever",
+          linkedin: "https://giphy.com/search/golden-retriever",
+        });
+        break;
       default:
         break;
     }
@@ -128,6 +138,14 @@ const About = (props) => {
             id="vince"
           />
           <p>Vince Abuyuan</p>
+        </div>
+        <div className="about-container__card" id="frank" onClick={toggleModal}>
+          <img
+            src="https://i.imgur.com/Lf9k7iE.jpg"
+            alt="Frankie"
+            id="frank"
+          />
+          <p>Frankie</p>
         </div>
       </div>
     </Layout>
