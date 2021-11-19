@@ -4,6 +4,7 @@ import { getHobby } from "../../services/hobbies";
 import { useEffect, useState } from "react";
 import { riskScouter } from "./hobbyservices";
 import Related from "../Related/Related";
+import handleRating from "../../utilities/handleRating";
 import { deleteHobby } from "../../services/hobbies";
 import { useHistory } from "react-router";
 
@@ -37,12 +38,7 @@ const HobbyDetail = () => {
             <div className="top__left__rating">
               <p>Rating</p>
               <div className="top__left__stars">
-                {hobby.rating}
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
+                {handleRating(hobby.rating)}
               </div>
             </div>
             <p>Add Photo</p>

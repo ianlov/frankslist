@@ -1,23 +1,10 @@
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-}
-
-
 .hobby-card {
   height: 306px;
   width: 729px;
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 20px auto 20px 100px;
-  border: solid #A9A9A9 1px;
+  border: solid #a9a9a9 1px;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -30,7 +17,7 @@
   margin: auto 10px auto 50px;
 }
 
-.hobby-card__image-box > img {
+.hobby-card__image-box > a > img {
   height: 225px;
   width: 225px;
   border-radius: 10px;
@@ -38,12 +25,12 @@
 }
 
 .hobby-card__image-box > button {
-  background-color: #F6C117;
+  background-color: #f6c117;
   border: none;
   border-radius: 20px;
   height: 40px;
   width: 140px;
-  color: #1F1F1F;
+  color: #1f1f1f;
   filter: drop-shadow(0 2px 3px gray);
   cursor: pointer;
   margin: -20px;
@@ -55,6 +42,8 @@
   flex-flow: column nowrap;
   justify-content: center;
   width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 .hobby-card__info > h1 {
@@ -62,7 +51,7 @@
 }
 
 .hobby-card__info__stars {
-  font-size: 30px
+  font-size: 30px;
 }
 
 .hobby-card__info__details {
