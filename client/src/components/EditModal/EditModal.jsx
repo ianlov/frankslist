@@ -140,9 +140,9 @@ const EditModal = ({ isVisible, setIsVisible, hobby }) => {
                 onChange={handleChange}
               />
 
-              <div className="">
-                <button className="btn__1" type="submit">Submit</button>
-                <button className="btn__2" onClick={() => setIsVisible(!isVisible)}>Close</button>
+              <div className="form-container__buttons">
+                <button className="form-container__button1" type="submit">Submit</button>
+                <button className="form-container__button2" onClick={() => setIsVisible(!isVisible)}>Close</button>
               </div>
 
             </form>
