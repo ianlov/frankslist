@@ -21,7 +21,7 @@ const CreateForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target
     console.log(name)
-    if (name !== hobby.price.low || name !== hobby.price.high) {
+    if (name === "low" || name === "high") {
       setHobby({
         ...hobby,
         [name]: value,
