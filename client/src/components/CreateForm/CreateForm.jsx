@@ -23,7 +23,7 @@ const CreateForm = () => {
     console.log(name)
 
 
-    if (name == "low" || name == "high") {
+    if (name === "low" || name === "high") {
       setHobby({
         ...hobby,
         price: {
