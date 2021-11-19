@@ -1,4 +1,4 @@
-.logincontainer{
+.logincontainer {
   padding: 40px 0;
   background-color: white;
   margin-top: 250px;
@@ -7,9 +7,8 @@
   margin-right: auto;
   margin-bottom: auto;
   width: 350px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   border-radius: 20px;
-
 }
 
 .login__header {
@@ -20,16 +19,16 @@
 
 .text__signin__1 {
   margin: 15px 0 5px 0;
-      text-align: left;
-      padding: 0 110px;
-      font-size: 12px;
+  text-align: left;
+  padding: 0 110px;
+  font-size: 12px;
 }
 
 .text__signin__2 {
   margin: 20px 0 5px 0;
-      text-align: left;
-      padding: 0 110px;
-      font-size: 12px;
+  text-align: left;
+  padding: 0 110px;
+  font-size: 12px;
 }
 
 .password {
@@ -40,7 +39,6 @@
   margin: 0px 110px 0px 150px;
 }
 
-
 .btn__2 {
   margin: 30px 105px 20px 105px;
   background-color: #2d251d;
@@ -50,6 +48,12 @@
   width: 140px;
   color: white;
   filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+}
+
+.btn__2:hover {
+  color: black;
+  background-color: white;
 }
 
 .btn__3 {
@@ -61,6 +65,11 @@
   width: 140px;
   color: white;
   filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+}
+
+.btn__3:hover {
+  filter: drop-shadow(0 2px 3px gray) brightness(0.9);
 }
 
 .member {
