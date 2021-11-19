@@ -20,7 +20,7 @@ const App = () => {
       user ? setUser(user) : setUser(null);
     };
     fetchUser();
-  }, [user]);
+  }, []);
 
   return (
     <div className="App">
