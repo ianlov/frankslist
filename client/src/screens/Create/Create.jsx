@@ -4,9 +4,7 @@ import Layout from "../../components/Layout/Layout";
 const CreateScreen = () => {
   return (
     <>
-      <Layout>
         <CreateForm />
-      </Layout>
     </>
   );
 };

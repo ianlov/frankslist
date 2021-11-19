@@ -1,4 +1,4 @@
-.container__2{
+.container__2 {
   padding: 40px 0;
   background-color: white;
   margin-top: 250px;
@@ -7,7 +7,7 @@
   margin-right: auto;
   margin-bottom: 100px;
   width: 350px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   border-radius: 20px;
 }
 
@@ -17,22 +17,22 @@
   font-size: 25px;
 }
 
-.input__su__1{
+.input__su__1 {
   margin: 5px 100px;
   border-radius: 5px;
 }
 
-.input__su__2{
+.input__su__2 {
   margin: 5px 100px;
   border-radius: 5px;
 }
 
-.input__su__3{
+.input__su__3 {
   margin: 5px 100px;
   border-radius: 5px;
 }
 
-.input__su__4{
+.input__su__4 {
   margin: 5px 100px;
   border-radius: 5px;
 }
@@ -73,6 +73,11 @@
   width: 140px;
   color: white;
   filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+}
+
+.btn__4:hover {
+  filter: drop-shadow(0 2px 3px gray) brightness(0.9);
 }
 
 .danger {

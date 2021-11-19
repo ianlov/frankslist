@@ -73,7 +73,7 @@ const About = () => {
   };
 
   return (
-    <Layout>
+    <>
       <AboutModal 
         setIsVisible={setIsVisible}
         isVisible={isVisible}
@@ -130,7 +130,7 @@ const About = () => {
           <p>Vince Abuyuan</p>
         </div>
       </div>
-    </Layout>
+      </>
   );
 };
 

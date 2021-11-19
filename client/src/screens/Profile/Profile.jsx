@@ -6,7 +6,6 @@ function Profile() {
 
   return (
     <>
-      <Layout>
       <div className='main__div'>
 
       <div className='left__profile__panel'>
@@ -134,7 +133,6 @@ function Profile() {
         </div>
         </div>
         </div>
-        </Layout>
     </>
   );
 }
