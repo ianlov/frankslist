@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import * as fetchRequest from "../../services/hobbies";
 import randomizer from "../../utilities/randomizer";
 
-const SplashContainer = () => {
+const SplashContainer = ( props ) => {
   const [featuredFocus, setFeaturedFocus] = useState(service.carouselArray[0]);
   const [count, setCount] = useState(0);
   const [toggleTransition, setTransition] = useState(false);
@@ -108,7 +108,7 @@ const SplashContainer = () => {
               hobby you would like to share with the community, you can create a
               new page for that hobby!
             </p>
-            <Link to="/sign-in">
+            <Link to={props.user ? "/hobbies" : "/sign-in"}>
               <button className="head__info3__boxButton">Get Started</button>
             </Link>
           </div>

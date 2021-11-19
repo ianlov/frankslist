@@ -142,6 +142,12 @@
   align-self: center;
   cursor: pointer;
   margin-top: 10px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.head__info3__boxButton:hover {
+  filter: drop-shadow(0 2px 3px gray) brightness(0.9);
 }
 
 .head__info1 > img,
@@ -333,9 +339,6 @@
     width: 100%;
     height: auto;
     border-radius: 0;
-  }
-  .overlayText {
-    width: 100%;
   }
 }
 
