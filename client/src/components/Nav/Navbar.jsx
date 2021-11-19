@@ -51,6 +51,7 @@ const Navbar = (props) => {
                 </Link>
               )}
             </li>
+            <li style={{ display: props.user ? "block" : "none" }}>poop</li>
           </ul>
           {props.user ? (
             <Link to="/myprofile">

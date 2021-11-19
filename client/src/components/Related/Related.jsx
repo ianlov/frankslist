@@ -10,14 +10,12 @@ const Related = ({ hobbyDetail }) => {
   useEffect(() => {
     const fetchHobbies = async () => {
       const res = await getHobbies();
-      console.log(res);
       setHobbies(res);
     };
     fetchHobbies();
   }, []);
 
   const relatedArray = related(hobbyDetail, hobbies);
-  console.log(relatedArray);
 
   return (
     <div className="related-container">

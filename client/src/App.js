@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 import About from "./screens/About/About";
 import Detail from "./screens/Detail/Detail";
@@ -48,8 +48,11 @@ const App = () => {
           {/* {user ? <CreateScreen user={user} /> : <Redirect to="/sign-in" />} */}
         </Route>
         <Route path="/myprofile">
-          <Profile user={user} setUser={setUser} />
-          {/* {user ? <Profile user={user} /> : <Redirect to="/sign-up" />} */}
+          {user ? (
+            <Profile user={user} setUser={setUser} />
+          ) : (
+            <Redirect to="/sign-up" />
+          )}
         </Route>
       </Switch>
     </div>

@@ -7,7 +7,7 @@ function Profile(props) {
   return (
     <>
       <Layout user={props.user} setUser={props.setUser}>
-        <ProfileContainer />
+        <ProfileContainer user={props.user}/>
       </Layout>
     </>
   );
