@@ -82,7 +82,7 @@ const LogIn = ({ setUser }) => {
                 required
                 name="password"
                 value={password}
-                type="text"
+                type="password"
                 placeholer="Type your password"
                 onChange={handleChange}
               />
