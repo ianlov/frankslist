@@ -42,6 +42,11 @@ const Navbar = (props) => {
                 <p>About Us</p>
               </Link>
             </li>
+            <li style={{ display: props.user ? "block" : "none" }}>
+              <Link to="/newhobby">
+                <p>Add Hobby</p>
+              </Link>
+            </li>
             <li>
               {props.user ? (
                 <p onClick={handleSignOut}>Log Out</p>
@@ -51,7 +56,6 @@ const Navbar = (props) => {
                 </Link>
               )}
             </li>
-            <li style={{ display: props.user ? "block" : "none" }}>poop</li>
           </ul>
           {props.user ? (
             <Link to="/myprofile">
@@ -85,6 +89,14 @@ const Navbar = (props) => {
               style={{ textDecoration: "none", color: "black" }}
             >
               <p>About Us</p>
+            </Link>
+          </li>
+          <li style={{ display: props.user ? "block" : "none" }}>
+            <Link
+              to="/newhobby"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <p>Add Hobby</p>
             </Link>
           </li>
           <li>
