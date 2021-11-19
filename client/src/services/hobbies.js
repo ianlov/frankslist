@@ -38,7 +38,8 @@ export const updateHobby = async (id, hobby) => {
 
 export const deleteHobby = async id => {
   try {
-      const response = await api.delete(`/hobbies/${id}`)
+    const response = await api.delete(`/hobbies/${id}`)
+    alert('Hobby Deleted')
       return response.data
   } catch (error) {
       throw error

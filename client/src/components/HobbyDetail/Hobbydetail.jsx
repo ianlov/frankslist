@@ -5,8 +5,17 @@ import { useEffect, useState } from "react";
 import { riskScouter } from "./hobbyservices";
 import Related from "../Related/Related";
 import { deleteHobby } from "../../services/hobbies";
+import { useHistory } from "react-router";
 
 const HobbyDetail = () => {
+
+  const history = useHistory()
+
+  const handleDelete = () => {
+    deleteHobby(hobby._id)
+    return history.push('/hobbies')
+  }
+
   const [hobby, setHobby] = useState({});
   const { id } = useParams();
   useEffect(() => {
@@ -17,6 +26,8 @@ const HobbyDetail = () => {
     };
     fetchHobby();
   }, [id]);
+
+  
   return (
     <>
       <section className="topAbout">
@@ -66,7 +77,7 @@ const HobbyDetail = () => {
             <h4>Description</h4>
             <p>{hobby.description}</p>
             <button className="bottom__edit__button">Edit Hobby</button>
-            <button className="bottom__delete_button"  onClick={() => deleteHobby(hobby._id)}>Delete Hobby</button>
+            <button className="bottom__delete_button" onClick={handleDelete}>Delete Hobby</button>
           </div>
         </div>
         {/* <div className="bottomDetails__right">
