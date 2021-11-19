@@ -1,11 +1,11 @@
 import LogIn from "../../components/LoginForm/LoginForm";
 import Layout from "../../components/Layout/Layout";
 
-const LoginScreen = ({ setUser }) => {
+const LoginScreen = (props) => {
   return (
     <>
       <Layout>
-        <LogIn setUser={setUser} />
+        <LogIn setUser={props.setUser} user={props.user} setUser={props.setUser}/>
       </Layout>
     </>
   );

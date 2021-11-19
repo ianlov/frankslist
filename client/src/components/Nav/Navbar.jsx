@@ -2,10 +2,18 @@ import "./navbar.css";
 import Search from "../Search/Search";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { signOut } from "../../services/users";
+import { useHistory } from "react-router-dom";
 
 const Navbar = (props) => {
+  const history = useHistory();
+
   const [hamDisplay, setHamDisplay] = useState(false);
-  
+  const handleSignOut = () => {
+    signOut();
+    props.setUser(null);
+    return history.push("/");
+  };
   return (
     <>
       <nav className="navcontainer">
@@ -20,7 +28,7 @@ const Navbar = (props) => {
               <h1 style={{ marginLeft: "-21px" }}>frankslist</h1>
             </div>
           </Link>
-          <Search handleSearch={props.handleSearch} onSubmit={props.onSubmit}/>
+          <Search handleSearch={props.handleSearch} onSubmit={props.onSubmit} />
         </div>
         <div className="nav__right">
           <ul className="nav__ul">
@@ -35,14 +43,24 @@ const Navbar = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="/sign-in">
-                <a>Log in</a>
-              </Link>
+              {props.user ? (
+                <a onClick={handleSignOut}>Log Out</a>
+              ) : (
+                <Link to="/sign-in">
+                  <a>Log In</a>
+                </Link>
+              )}
             </li>
           </ul>
-          <Link to="/sign-in">
-            <button className="nav__button">Sign Up</button>
-          </Link>
+          {props.user ? (
+            <Link to="/myprofile">
+              <button className="myProfile__button">My Profile</button>
+            </Link>
+          ) : (
+            <Link to="/sign-in">
+              <button className="nav__button">Sign Up</button>
+            </Link>
+          )}
         </div>
         <div className="hamburger" onClick={() => setHamDisplay(!hamDisplay)}>
           <div></div>

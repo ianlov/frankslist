@@ -75,6 +75,22 @@
   filter: drop-shadow(0 2px 3px gray) brightness(1.05);
 }
 
+.myProfile__button {
+  background-color: #f6c117;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: black;
+  filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.myProfile__button:hover {
+  filter: drop-shadow(0 2px 3px gray) brightness(0.9);
+}
+
 .hamburger {
   display: none;
   width: 50px;
