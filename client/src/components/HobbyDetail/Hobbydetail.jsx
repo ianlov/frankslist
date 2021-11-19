@@ -2,11 +2,12 @@ import "./hobbydetail.css";
 import { useParams } from "react-router";
 import { getHobby } from "../../services/hobbies";
 import { useEffect, useState } from "react";
-import { riskScouter } from "./hobbyservices";
 import Related from "../Related/Related";
 import handleRating from "../../utilities/handleRating";
+import handleRisk from "../../utilities/handleRisk";
 import { deleteHobby } from "../../services/hobbies";
 import { useHistory } from "react-router";
+
 
 const HobbyDetail = () => {
 
@@ -66,7 +67,7 @@ const HobbyDetail = () => {
                 ${hobby.price ? hobby.price.low : "0"}-$
                 {hobby.price ? hobby.price.high : "0"} per Month
               </li>
-              <li>{riskScouter(hobby.risk)}</li>
+              <li>{handleRisk(hobby.risk)}</li>
             </ul>
           </div>
           <div className="bottom__left__down">

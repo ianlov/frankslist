@@ -16,12 +16,15 @@
   display: flex;
 }
 
-.nav__ul > li > a {
+.nav__ul > li > a,
+.nav__ul > li > p {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
-.nav__ul > li > a:hover {
+.nav__ul > li > a:hover,
+.nav__ul > li > p:hover {
   text-decoration: underline;
 }
 
@@ -145,9 +148,14 @@
   border-radius: 20px;
   height: 60px;
   width: 200px;
-  color: white;
+  color: black;
   filter: drop-shadow(0 2px 3px gray);
   cursor: pointer;
+  transition: 0.8s;
+}
+
+.hamburgerMenuProfile__button:hover {
+  filter: drop-shadow(0 2px 3px gray) brightness(0.9);
 }
 
 .hamburgerMenu > p {

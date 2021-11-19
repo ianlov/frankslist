@@ -5,7 +5,7 @@ const SignUpScreen = (props) => {
   return (
     <>
       <Layout user={props.user} setUser={props.setUser}>
-        <SignUp />
+        <SignUp user={props.user} setUser={props.setUser}/>
       </Layout>
     </>
   );

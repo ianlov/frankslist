@@ -88,7 +88,9 @@ const Navbar = (props) => {
           </li>
           <li>
             {props.user ? (
-              <p onClick={handleSignOut}>Log Out</p>
+              <p style={{ cursor: "pointer" }} onClick={handleSignOut}>
+                Log Out
+              </p>
             ) : (
               <Link
                 to="/sign-in"
