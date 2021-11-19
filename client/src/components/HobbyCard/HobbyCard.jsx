@@ -1,42 +1,9 @@
 import "./style.css";
+import handlePrice from "../../utilities/handlePrice.js";
+import handleRisk from "../../utilities/handleRisk.js";
+import handleRating from "../../utilities/handleRating.js";
+
 const HobbyCard = ({ hobby }) => {
-  const handlePrice = (price) => {
-    if (price < 20) {
-      return "$";
-    } else if (price >= 20 && price < 100) {
-      return "$$";
-    } else if (price >= 100 && price < 5000) {
-      return "$$$";
-    } else {
-      return "$$$$";
-    }
-  }
-
-  const handleRisk = (risk) => {
-    let message = "";
-    switch (risk) {
-      case 1:
-        message = "No Risk";
-        break;
-      case 2:
-        message = "Little Risk";
-        break;
-      case 3:
-        message = "Moderate Risk";
-        break;
-      case 4:
-        message = "Risky";
-        break;
-      case 5:
-        message = "Dangerous";
-        break;
-      default:
-        message = "N/A"
-        break;
-    }
-    return message
-  }
-
   return (
     <div className="hobby-card" >
       <div className="hobby-card__image-box">
@@ -45,7 +12,7 @@ const HobbyCard = ({ hobby }) => {
       </div>
       <div className="hobby-card__info" >
         <h1>{hobby.name}</h1>
-        <p>{hobby.rating ? hobby.rating : "N/A"}</p>
+        {handleRating(hobby.rating)}
         <div className="hobby-card__info__details" >
           <div className="hobby-card__info__details__left" >
             <p>Location</p>
