@@ -44,7 +44,7 @@
   filter: drop-shadow(0 2px 3px gray);
 }
 
-.top__right {
+.topAbout__right {
   width: auto;
   max-height: 300px;
   min-height: 180px;
@@ -111,6 +111,7 @@
   height: 40px;
   width: 140px;
   filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
 }
 
 .bottom__delete_button {
@@ -120,6 +121,7 @@
   height: 40px;
   width: 140px;
   filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
 }
 
 .bottomDetails__right {
@@ -131,17 +133,8 @@
   margin-bottom: 8px;
 }
 
-.bottom__right__relatedCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bottom__right__relatedCard img {
-  width: 180px;
-  height: auto;
-  border-radius: 20px;
-  margin-right: 10px;
+.details__related {
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -153,6 +146,7 @@
   .topAbout__left {
     align-items: unset;
     flex-direction: column-reverse;
+    width: 90%;
   }
   .top__left__button {
     align-self: flex-end;
@@ -160,7 +154,7 @@
     margin-top: -20px;
     margin-right: 60px;
   }
-  .top__right {
+  .topAbout__right {
     margin-top: 25px;
     width: 90vw;
     height: auto;
@@ -174,13 +168,13 @@
   .bottomDetails__right {
     margin-left: 40px;
   }
+  .details__related {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .bottom__left {
-    margin-right: 0;
-  }
-  .bottom__right__relatedCard {
-    justify-content: unset;
-  }
-  .bottom__right__relatedCard img {
     width: 90%;
   }
 }

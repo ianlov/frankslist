@@ -1,30 +1,45 @@
 import related from "../../utilities/related.js";
 import "./style.css";
+import { getHobbies } from "../../services/hobbies.js";
 
 import { Link } from "react-router-dom";
 import { useParams } from "react-router";
+import { useState, useEffect } from "react";
 
-const Related = () => {
-  const relatedArray = related(hobbyDetail ,hobbies)
+const Related = ({ hobbyDetail }) => {
+  const [hobbies, setHobbies] = useState([]);
+  useEffect(() => {
+    const fetchHobbies = async () => {
+      const res = await getHobbies();
+      console.log(res);
+      setHobbies(res);
+    };
+    fetchHobbies();
+  }, []);
+
+  const relatedArray = related(hobbyDetail, hobbies);
+  console.log(relatedArray);
 
   return (
     <div className="related-container">
       <div className="related-container__title">Related</div>
-      {relatedArray.map((hobby, idx) => (
-        <Link 
-          className="related-container__related"
-          to={`/hobbies/${hobby.id}`}
-          key={idx}
-        >
-          <div 
-            className="img"
-            style={{ backgroundImage : `url(${hobby.img_url})` }}
-          ></div>
-          <div>{hobby.name}</div>
-        </Link>
-      ))}
+      {hobbies.length
+        ? relatedArray.map((hobby, idx) => (
+            <Link
+              className="related-container__related"
+              to={`/hobby/${hobby && hobby._id}`}
+              key={idx}
+            >
+              <div
+                className="img"
+                style={{ backgroundImage: `url(${hobby && hobby.img_url})` }}
+              ></div>
+              <div>{hobby && hobby.name}</div>
+            </Link>
+          ))
+        : null}
     </div>
-  )
-}
+  );
+};
 
 export default Related;
