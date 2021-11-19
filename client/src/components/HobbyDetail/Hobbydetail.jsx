@@ -7,8 +7,17 @@ import handleRating from "../../utilities/handleRating.js";
 import handleRisk from "../../utilities/handleRisk.js";
 import { deleteHobby } from "../../services/hobbies";
 import EditModal from "../../components/EditModal/EditModal.jsx";
+import { useHistory } from "react-router";
 
 const HobbyDetail = () => {
+
+  const history = useHistory()
+
+  const handleDelete = () => {
+    deleteHobby(hobby._id)
+    return history.push('/hobbies')
+  }
+
   const [hobby, setHobby] = useState({});
   const [isVisible, setIsVisible] = useState(false)
   const { id } = useParams();
@@ -22,6 +31,7 @@ const HobbyDetail = () => {
     fetchHobby();
   }, [id]);
 
+  
   return (
     <>
       <EditModal 

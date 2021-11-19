@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import * as fetchRequest from "../../services/hobbies";
 import randomizer from "../../utilities/randomizer";
 
-const SplashContainer = () => {
+const SplashContainer = ( props ) => {
   const [featuredFocus, setFeaturedFocus] = useState(service.carouselArray[0]);
   const [count, setCount] = useState(0);
   const [toggleTransition, setTransition] = useState(false);
@@ -75,7 +75,11 @@ const SplashContainer = () => {
           <div className="head__info1__box">
             <h1>1. Sign Up</h1>
             <p>
-            You work, you eat, you sleep - and that's about it... your life is boring. That's why we made Frankslist! Frankslist is the one stop web application for finding your dream hobby. Create an account, search for hobbies based on your unique lifestyle, and save your favorites! 
+              You work, you eat, you sleep - and that's about it... your life is
+              boring. That's why we made Frankslist! Frankslist is the one stop
+              web application for finding your dream hobby. Create an account,
+              search for hobbies based on your unique lifestyle, and save your
+              favorites!
             </p>
           </div>
           <img
@@ -91,7 +95,8 @@ const SplashContainer = () => {
           <div className="head__info2__box">
             <h1>2. Explore</h1>
             <p>
-              Bored? Explore our catalog, meet new people, find a new passion, and starting living life.
+              Bored? Explore our catalog, meet new people, find a new passion,
+              and starting living life.
             </p>
           </div>
         </article>
@@ -99,9 +104,11 @@ const SplashContainer = () => {
           <div className="head__info3__box">
             <h1>3. Discover</h1>
             <p>
-            Browse through our existing catalog of hobbies or if you have a hobby you would like to share with the community, you can create a new page for that hobby!
+              Browse through our existing catalog of hobbies or if you have a
+              hobby you would like to share with the community, you can create a
+              new page for that hobby!
             </p>
-            <Link to="/sign-in">
+            <Link to={props.user ? "/hobbies" : "/sign-in"}>
               <button className="head__info3__boxButton">Get Started</button>
             </Link>
           </div>
@@ -157,27 +164,30 @@ const SplashContainer = () => {
             <div>
               {outdoor.map((hobby) => {
                 return (
-                  <div>
+                  <Link to={`hobby/${hobby._id}`}>
                     <div className="overlayText">
                       <h3 className="overlayText__h3">{hobby.name}</h3>
                     </div>
                     <img className="category__img" src={hobby.img_url} alt="" />
-                  </div>
+                  </Link>
                 );
               })}
             </div>
           </div>
-          <div style={{marginTop:"10px"}}>
+          <div style={{ marginTop: "10px" }}>
             <h3>Indoor Hobbies</h3>
             <div>
               {indoor.map((hobby) => {
                 return (
-                  <div>
+                  <Link
+                    to={`hobby/${hobby._id}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="overlayText">
                       <h3 className="overlayText__h3">{hobby.name}</h3>
                     </div>
                     <img className="category__img" src={hobby.img_url} alt="" />
-                  </div>
+                  </Link>
                 );
               })}
             </div>

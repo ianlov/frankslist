@@ -21,18 +21,21 @@ const CreateForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target
     console.log(name)
-    if (name !== hobby.price.low || name !== hobby.price.high) {
-      setHobby({
-        ...hobby,
-        [name]: value,
-      })
-    } else {
+
+
+    if (name == "low" || name == "high") {
+      console.log('test')
       setHobby({
         ...hobby,
         price: {
           ...hobby.price,
           [name]: value,
-        },
+        }
+      })
+    } else {
+      setHobby({
+        ...hobby,
+        [name]: value,
       })
     }
   }
@@ -75,6 +78,7 @@ const CreateForm = () => {
               value={hobby.indoors}
               required>
               
+                <option>Select Option</option>
                 <option value="true">Indoors</option>
                 <option value="false">Outdoors</option>
               </select>
@@ -91,6 +95,7 @@ const CreateForm = () => {
               type="number"
               required>
               
+                <option>Select Option</option>
                 <option value="1">1 (No Risk)</option>
                 <option value="2">2 (Little Risk)</option>
                 <option value="3">3 (Moderate Risk)</option>
@@ -114,7 +119,7 @@ const CreateForm = () => {
             <input
               className="input-price__2"
               placeholder="Price High"
-              defaultValue={hobby.price.low}
+              defaultValue={hobby.price.high}
               name="high"
               type="number"
               required

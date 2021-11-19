@@ -4,7 +4,7 @@ import SplashContainer from "../../components/SplashContainer/Splash";
 const Splash = (props) => {
   return (
     <Layout user={props.user} setUser={props.setUser}>
-      <SplashContainer />
+      <SplashContainer user={props.user} />
     </Layout>
   );
 };
