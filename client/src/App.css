@@ -13,6 +13,11 @@ body {
   box-sizing: border-box;
 }
 
-button {
+button,
+a {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
