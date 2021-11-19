@@ -57,7 +57,7 @@ const Navbar = (props) => {
               <button className="myProfile__button">My Profile</button>
             </Link>
           ) : (
-            <Link to="/sign-in">
+            <Link to="/sign-up">
               <button className="nav__button">Sign Up</button>
             </Link>
           )}
@@ -110,7 +110,7 @@ const Navbar = (props) => {
             </button>
           </Link>
         ) : (
-          <Link to="/sign-in">
+          <Link to="/sign-up">
             <button className="hamburgerMenu__button">Sign Up</button>
           </Link>
         )}
