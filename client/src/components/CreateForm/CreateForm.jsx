@@ -24,15 +24,15 @@ const CreateForm = () => {
     if (name === "low" || name === "high") {
       setHobby({
         ...hobby,
-        [name]: value,
-      })
-    } else {
-      setHobby({
-        ...hobby,
         price: {
           ...hobby.price,
           [name]: value,
         },
+      })
+    } else {
+      setHobby({
+        ...hobby,
+        [name]: value,
       })
     }
   }
