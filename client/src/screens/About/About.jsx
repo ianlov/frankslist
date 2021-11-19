@@ -4,7 +4,7 @@ import "./script.css";
 
 import { useState } from "react";
 
-const About = () => {
+const About = (props) => {
   const [isVisible, setIsVisible] = useState(false);
   const [focus, setFocus] = useState({
     name: "",
@@ -73,7 +73,7 @@ const About = () => {
   };
 
   return (
-    <>
+    <Layout user={props.user} setUser={props.setUser}>
       <AboutModal 
         setIsVisible={setIsVisible}
         isVisible={isVisible}
@@ -130,7 +130,7 @@ const About = () => {
           <p>Vince Abuyuan</p>
         </div>
       </div>
-      </>
+    </Layout>
   );
 };
 

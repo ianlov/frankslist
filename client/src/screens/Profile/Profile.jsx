@@ -1,11 +1,12 @@
 import Layout from '../../components/Layout/Layout';
 import './style.css'
 
-function Profile() {
+function Profile(props) {
 
 
   return (
     <>
+      <Layout user={props.user} setUser={props.setUser}>
       <div className='main__div'>
 
       <div className='left__profile__panel'>
@@ -133,6 +134,7 @@ function Profile() {
         </div>
         </div>
         </div>
+        </Layout>
     </>
   );
 }
