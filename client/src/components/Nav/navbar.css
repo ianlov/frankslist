@@ -139,6 +139,17 @@
   cursor: pointer;
 }
 
+.hamburgerMenuProfile__button {
+  background-color: #f6c117;
+  border: none;
+  border-radius: 20px;
+  height: 60px;
+  width: 200px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+}
+
 .hamburgerMenu > p {
   font-size: 20px;
   margin-top: 26px;

@@ -95,9 +95,18 @@ const Navbar = (props) => {
             </Link>
           </li>
         </ul>
-        <Link to="/sign-in">
-          <button className="hamburgerMenu__button">Sign Up</button>
-        </Link>
+        {props.user ? (
+          <Link to="/myprofile">
+            <button className="hamburgerMenuProfile__button ">
+              My Profile
+            </button>
+          </Link>
+        ) : (
+          <Link to="/sign-in">
+            <button className="hamburgerMenu__button">Sign Up</button>
+          </Link>
+        )}
+
         <p onClick={() => setHamDisplay(!hamDisplay)}>Close</p>
       </div>
     </>

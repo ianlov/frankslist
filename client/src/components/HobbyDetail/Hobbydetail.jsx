@@ -75,7 +75,9 @@ const HobbyDetail = () => {
             <p>MMA</p>
           </div>
         </div> */}
-        <Related hobbyDetail={hobby} />
+        <div className="details__related">
+          <Related hobbyDetail={hobby} />
+        </div>
       </section>
     </>
   );
