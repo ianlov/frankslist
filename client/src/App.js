@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import SignUpScreen from "./screens/SignUp/SignUp";
 import CreateScreen from "./screens/Create/Create";
 import { verifyUser } from "./services/users";
-import Layout from "./components/Layout/Layout";
+
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -21,7 +21,6 @@ const App = () => {
       user ? setUser(user) : setUser(null);
     };
     fetchUser();
-    console.log(user ? true : false);
   }, []);
 
   return (
