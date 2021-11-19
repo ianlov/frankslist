@@ -100,6 +100,28 @@
   opacity: 50%;
 }
 
+.bottom__left__down button {
+  margin: 70px;
+}
+
+.bottom__edit__button {
+  background-color: #04e90c;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  filter: drop-shadow(0 2px 3px gray);
+}
+
+.bottom__delete_button {
+  background-color: #f61717;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  filter: drop-shadow(0 2px 3px gray);
+}
+
 .bottomDetails__right {
   margin-top: 35px;
 }
