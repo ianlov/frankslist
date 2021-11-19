@@ -4,9 +4,7 @@ import SignUp from "../../components/SignUpForm/SignUp";
 const SignUpScreen = () => {
   return (
     <>
-      <Layout>
         <SignUp />
-      </Layout>
     </>
   );
 };

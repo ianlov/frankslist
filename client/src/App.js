@@ -9,19 +9,20 @@ import Splash from "./screens/Splash/Splash";
 import { useState, useEffect } from "react";
 import SignUpScreen from "./screens/SignUp/SignUp";
 import CreateScreen from "./screens/Create/Create";
+import { verifyUser } from "./services/users";
 
 const App = () => {
   const [user, setUser] = useState(null);
 
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     const user = await verifyUser();
-  //     user ? setUser(user) : setUser(null);
-  //   };
-  //   fetchUser();
-  // }, []);
 
-  
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser();
+      user ? setUser(user) : setUser(null);
+    };
+    fetchUser();
+    console.log(user ? true: false)
+  }, []);
 
   return (
     <div className="App">
@@ -49,9 +50,9 @@ const App = () => {
           {/* {user ? <CreateScreen user={user} /> : <Redirect to="/sign-in" />} */}
         </Route>
         <Route path="/myprofile">
-          <Profile/>
+          <Profile />
           {/* {user ? <Profile user={user} /> : <Redirect to="/sign-up" />} */}
-        </Route> 
+        </Route>
       </Switch>
     </div>
   );

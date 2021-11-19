@@ -1,10 +1,9 @@
 import "./LoginForm.css";
 import { useState } from "react";
 import { signIn } from "../../services/users";
-import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
-const LogIn = (props) => {
+const LogIn = ({ setUser }) => {
   const history = useHistory();
 
   const [form, setForm] = useState({
@@ -23,9 +22,8 @@ const LogIn = (props) => {
 
   const onSignIn = async (event) => {
     event.preventDefault();
-    const { setUser } = props;
     try {
-      const user = await signIn(form);
+      const user = await signIn({ email: form.email, password: form.password });
       setUser(user);
       history.push("/");
     } catch (error) {
