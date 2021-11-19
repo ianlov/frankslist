@@ -3,23 +3,24 @@ import './CreateForm.css'
 import { Redirect } from 'react-router-dom'
 import { createHobby } from '../../services/hobbies'
 
-const CreateForm = (props) => {
+const CreateForm = () => {
   const [hobby, setHobby] = useState({
     name: '',
+    indoors: '',
+    risk: '',
+    price: {
+      low: '',
+      high: '',
+    },
     img_url: '',
     description: '',
-    price: {
-      low: { type: Number, required: true },
-      high: { type: Number, required: true },
-    },
-    indoors: { type: Boolean, required: true },
-    risk: { type: Number, required: true },
   })
 
   const [isCreated, setCreated] = useState(false)
 
   const handleChange = (event) => {
     const { name, value } = event.target
+    console.log(name)
     if (name !== hobby.price.low || name !== hobby.price.high) {
       setHobby({
         ...hobby,
@@ -52,45 +53,57 @@ const CreateForm = (props) => {
         <section className="container__1">
           <div className="header__3">Create A Hobby</div>
           
-    {/* Didn't pass through any props
-    
-    
-    
-    */}
-      <form className="form"  onSubmit={handleSubmit}>
+          <form className="form" onSubmit={handleSubmit}>
+            
+          <h5 className="text__hobby__5">Hobby Name</h5>
+            <input
+              className="hobby__name"
+              placeholder="Hobby Name"
+              value={hobby.name}
+              name="name"
+              type="text"
+              required
+              onChange={handleChange}
+            />
 
-      <h5 className="text__hobby__1">Indoors/ Outdoors</h5>
-            
-    {/* Didn't add input tag to dropdown box...might cause problems 
-    
-    
-    
-    */}
-          <select className="in-outdoor" id="in-outdoor">
-            <option value="indoors">Indoors</option>
-            <option value="outdoors">Outdoors</option>
-          </select>
-            
-      <h5 className="text__hobby__2">Danger/ Risk Level</h5>
-            
-    {/* Didn't add input tag to dropdown box...might cause problems 
-    
-    
-    
-    */}
-          <select className="risk" id="risk">
-            <option value="1">1 (Safe)</option>
-            <option value="2">2 (Kind Of Safe)</option>
-            <option value="3">3 (Median Safe/Dangerous)</option>
-            <option value="4">4 (Kind Of Dangerous)</option>
-            <option value="5">5 (Dangerous)</option>
+            <h5 className="text__hobby__1">Indoors/ Outdoors</h5>
+            <select
+              name="indoors"
+              className="in-outdoor"
+              id="in-outdoor"
+              onChange={handleChange}
+              value={hobby.indoors}
+              required>
+              
+                <option value="true">Indoors</option>
+                <option value="false">Outdoors</option>
+              </select>
+
+
+
+            <h5 className="text__hobby__2">Danger/ Risk Level</h5>
+            <select
+              name="risk"
+              className="risk"
+              id="risk"
+              onChange={handleChange}
+              value={hobby.risk}
+              type="number"
+              required>
+              
+                <option value="1">1 (No Risk)</option>
+                <option value="2">2 (Little Risk)</option>
+                <option value="3">3 (Moderate Risk)</option>
+                <option value="4">4 (Risky)</option>
+                <option value="5">5 (Dangerous)</option>
             </select>
+
 
           <h5 className="text__hobby__3">Price Low</h5>
             <input
-              className="input-price"
+              className="input-price__1"
               placeholder="Price Low"
-              value={hobby.price}
+              defaultValue={hobby.price.low}
               name="low"
               type="number"
               required
@@ -99,11 +112,22 @@ const CreateForm = (props) => {
             
           <h5 className="text__hobby__3">Price High</h5>
             <input
-              className="input-price"
+              className="input-price__2"
               placeholder="Price High"
-              value={hobby.price}
+              defaultValue={hobby.price.low}
               name="high"
               type="number"
+              required
+              onChange={handleChange}
+            />
+
+          <h5 className="text__hobby__6">Add Image</h5>
+            <input
+              className="input-image-link"
+              placeholder="Image Link"
+              defaultValue={hobby.img_url}
+              name="img_url"
+              type="text"
               required
               onChange={handleChange}
             />
