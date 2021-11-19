@@ -3,9 +3,9 @@ import Search from "../Search/Search";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [hamDisplay, setHamDisplay] = useState(false);
-
+  
   return (
     <>
       <nav className="navcontainer">
@@ -20,7 +20,7 @@ const Navbar = () => {
               <h1 style={{ marginLeft: "-21px" }}>frankslist</h1>
             </div>
           </Link>
-          <Search />
+          <Search handleSearch={props.handleSearch} onSubmit={props.onSubmit}/>
         </div>
         <div className="nav__right">
           <ul className="nav__ul">
@@ -40,7 +40,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <Link to="/sign-up">
+          <Link to="/sign-in">
             <button className="nav__button">Sign Up</button>
           </Link>
         </div>
