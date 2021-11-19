@@ -3,8 +3,8 @@ import "./hobbydetail.css";
 const HobbyDetail = () => {
   return (
     <>
-      <section className="top">
-        <div className="top__left">
+      <section className="topAbout">
+        <div className="topAbout__left">
           <div className="top__leftTop">
             <h1>Brazilian Jiu Jitsu</h1>
             <div className="top__left__rating">
@@ -67,8 +67,10 @@ const HobbyDetail = () => {
             </p>
           </div>
         </div>
-        <div className="bottom__right">
-          <h3>Related</h3>
+        <div className="bottomDetails__right">
+          <p>
+            <strong>Related</strong>
+          </p>
           <div className="bottom__right__relatedCard">
             <img src="https://images.unsplash.com/photo-1501116518234-f32f28802bd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" />
             <p>MMA</p>
