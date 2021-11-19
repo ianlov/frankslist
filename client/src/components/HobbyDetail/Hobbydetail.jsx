@@ -81,7 +81,7 @@ const HobbyDetail = () => {
             <h4>Description</h4>
             <p>{hobby.description}</p>
             <button className="bottom__edit__button" onClick={() => setIsVisible(!isVisible)}>Edit Hobby</button>
-            <button className="bottom__delete_button"  onClick={() => deleteHobby(hobby._id)}>Delete Hobby</button>
+            <button className="bottom__delete_button"  onClick={handleDelete}>Delete Hobby</button>
           </div>
         </div>
         <div className="details__related">

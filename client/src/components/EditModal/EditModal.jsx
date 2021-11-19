@@ -1,14 +1,11 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
-import { Redirect } from 'react-router-dom'
 
 import { updateHobby } from '../../services/hobbies'
 import "./style.css";
 
 
 const EditModal = ({ isVisible, setIsVisible, hobby }) => {
-  // console.log(hobby)
-  // const [isCreated, setIsCreated] = useState(false)
   const [hobbyEdit, setHobbyEdit] = useState({
     name: '',
     indoors: '',
@@ -41,7 +38,7 @@ const EditModal = ({ isVisible, setIsVisible, hobby }) => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault()
-    const created = await updateHobby(hobby._id, hobbyEdit)
+    await updateHobby(hobby._id, hobbyEdit)
     window.location.reload(false);
   }
 
@@ -52,7 +49,7 @@ const EditModal = ({ isVisible, setIsVisible, hobby }) => {
       <div className="modal-wrapper">
         <div className="modal-container">
           <section className="form-container">
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="form-container__form" onSubmit={handleSubmit}>
 
               <h5 className="text__hobby__5">Hobby Name</h5>
               <input

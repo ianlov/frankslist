@@ -41,3 +41,10 @@
   border-radius: 20px;
 }
 
+.form-container__form {
+  color: #C4C4C4;
+width: 100%;
+display: flex;
+flex-flow: column nowrap;
+
+}
