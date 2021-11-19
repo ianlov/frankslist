@@ -14,7 +14,6 @@ const Hobbies = (props) => {
       setSearchResult(allHobbies);
     };
     hobbyFetch();
-    console.log(hobbies);
   }, []);
 
   const handleSubmit = (event) => {
