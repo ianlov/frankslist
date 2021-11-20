@@ -91,14 +91,14 @@ const Navbar = (props) => {
               <p>About Us</p>
             </Link>
           </li>
-          <li style={{ display: props.user ? "block" : "none" }}>
+          { props.user && <li>
             <Link
               to="/newhobby"
               style={{ textDecoration: "none", color: "black" }}
             >
               <p>Add Hobby</p>
             </Link>
-          </li>
+          </li>}
           <li>
             {props.user ? (
               <p style={{ cursor: "pointer" }} onClick={handleSignOut}>
@@ -130,7 +130,7 @@ const Navbar = (props) => {
           </Link>
         )}
 
-        <p onClick={() => setHamDisplay(!hamDisplay)}>Close</p>
+        <p className="ham__close" onClick={() => setHamDisplay(!hamDisplay)}>Close</p>
       </div>
     </>
   );
