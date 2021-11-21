@@ -74,6 +74,7 @@ const CreateForm = () => {
               value={hobby.indoors}
               required>
               
+                <option>Please Select</option>
                 <option value="true">Indoors</option>
                 <option value="false">Outdoors</option>
               </select>
@@ -90,6 +91,7 @@ const CreateForm = () => {
               type="number"
               required>
               
+                <option>Please Select</option>
                 <option value="1">1 (No Risk)</option>
                 <option value="2">2 (Little Risk)</option>
                 <option value="3">3 (Moderate Risk)</option>
