@@ -39,11 +39,11 @@ const About = (props) => {
       case "ricky":
         setFocus({
           name: "Ricky Boyd",
-          bio: "grabby. Barry LANDS on a ball and COLLAPSES. - JS REVISIONS 8/13/07 25. BARRY Oh my sweet lord of bees. JACKSON Hey, candy brain, get off there! Barry attempts to pulls his legs off, but they stick. BARRY Problem! A tennis shoe and a hand ENTER FRAME. The hand picks up the ball with Barry underneath it. BARRY (CONT'D) Guys! BUZZ This could be bad. JACKSON Affirmative. Vanessa walks back to the service line, BOUNCES the ball. Each time it BOUNCES, the other bees cringe and GASP. ANGLE ON: Barry, terrified. Pure dumb luck, he’s",
+          bio: "Hey my name is Ricky, I'm from Memphis, TN. I currently live in Atlanta, GA and transitioned into software engineering from trucking/logistics after extensive research while on working over the road. A few hobbies I enjoy are...going to the gym, playing basketball, binge watch anime and shopping.",
           img_url:
-            "https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png",
-          github: "",
-          linkedin: "",
+            "https://i.imgur.com/woxoiQW.png",
+          github: "https://github.com/rickyboyd45",
+          linkedin: "https://www.linkedin.com/in/ricky-boyd-7a41a6217/",
         });
         break;
       case "paul":
@@ -117,7 +117,7 @@ const About = (props) => {
         </div>
         <div className="about-container__card" id="ricky" onClick={toggleModal}>
           <img
-            src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png"
+            src="https://i.imgur.com/woxoiQW.png"
             alt="Ricky"
             id="ricky"
           />
