@@ -1,0 +1,73 @@
+.hobby-card {
+  height: 306px;
+  width: 729px;
+  display: flex;
+  background-color: #ffffff;
+  margin: 20px auto 20px 100px;
+  border: solid #a9a9a9 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.hobby-card__image-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px auto 50px;
+}
+
+.hobby-card__image-box > a > img {
+  height: 225px;
+  width: 225px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.hobby-card__image-box > button {
+  background-color: #f6c117;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: #1f1f1f;
+  filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+  margin: -20px;
+  font-size: 20px;
+}
+
+.hobby-card__info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.hobby-card__info > h1 {
+  font-size: 48px;
+}
+
+.hobby-card__info__stars {
+  font-size: 30px;
+}
+
+.hobby-card__info__details {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 30px 0px;
+  font-size: 24px;
+  color: gray;
+}
+
+.hobby-card__info__details__left {
+  text-align: left;
+}
+
+.hobby-card__info__details__right {
+  text-align: right;
+  margin-right: 10px;
+}

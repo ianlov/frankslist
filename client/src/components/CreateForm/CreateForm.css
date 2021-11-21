@@ -1,0 +1,137 @@
+.container__1{
+  padding: 40px 0;
+  background-color: white;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 20px;
+}
+
+.header__3 {
+  font-family: 'Roboto', sans-serif, bold;
+  margin: 0px 50px 30px 90px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.description {
+  padding: 0px -10px;
+  margin: 0px -10px;
+}
+
+.hobby__name {
+  padding: 0px -10px;
+  margin: 0px 80px;
+  border-radius: 5px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.btn__1 {
+  margin: 20px 105px;
+  background-color: #CCD5AE;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+  border-radius: 20px;
+}
+
+.text__hobby__1 {
+  margin: 12px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
+.text__hobby__2 {
+  margin: 10px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
+.text__hobby__3 {
+  margin: 10px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
+.text__hobby__4 {
+  margin: 25px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
+.text__hobby__5 {
+  margin: 25px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
+.text__hobby__6 {
+  margin: 10px 20px 5px 20px;
+  text-align: left;
+  padding: 0px 60px;
+}
+
+.in-out {
+margin: 20px 0 5px 0;
+padding: 10px 0 10px 110px;
+}
+
+.input-price__1 {
+padding: 0 20px;
+text-align: center;
+margin: 0 80px 0 80px;
+border-radius: 5px;
+}
+
+.input-price__2 {
+padding: 0 20px;
+text-align: center;
+margin: 0 80px 0 80px;
+border-radius: 5px;
+}
+
+.input-image-link {
+padding: 0 20px;
+text-align: center;
+margin: 0 80px 0 80px;
+border-radius: 5px;
+}
+
+.form {
+  color: #C4C4C4;
+}
+
+.in-outdoor {
+  padding: 0 55px;
+  margin: 0 80px 0 80px;
+  text-align: center;
+  background-color: rgba(196, 196, 196, 0.379);
+  border-radius: 5px;
+}
+
+.risk  {
+  padding: 0px 30px;
+  margin: 0 80px 0 80px;
+  text-align: center;
+  background-color: rgba(196, 196, 196, 0.379);
+  border-radius: 5px;
+}
+
+.textbox {
+  padding: 0px 10px;
+  margin: 0 80px 0 80px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.price {
+  padding: 0px 20px;
+}

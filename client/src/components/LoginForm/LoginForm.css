@@ -1,0 +1,99 @@
+.logincontainer {
+  padding: 40px 0;
+  background-color: white;
+  margin-top: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 350px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+}
+
+.login__header {
+  margin: 0px 150px 30px 150px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.text__signin__1 {
+  margin: 15px 0 5px 0;
+  text-align: left;
+  padding: 0 110px;
+  font-size: 12px;
+}
+
+.text__signin__2 {
+  margin: 20px 0 5px 0;
+  text-align: left;
+  padding: 0 110px;
+  font-size: 12px;
+}
+
+.password {
+  margin-bottom: -20px;
+}
+
+.forgot {
+  margin: 0px 110px 0px 150px;
+}
+
+.btn__2 {
+  margin: 30px 105px 20px 105px;
+  background-color: #2d251d;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+}
+
+.btn__2:hover {
+  color: black;
+  background-color: white;
+}
+
+.btn__3 {
+  margin: 0 105px 20px 105px;
+  background-color: #3db559;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+  cursor: pointer;
+}
+
+.btn__3:hover {
+  filter: drop-shadow(0 2px 3px gray) brightness(0.9);
+}
+
+.member {
+  margin: 15px;
+  padding: 0 100px 0 115px;
+}
+
+.input__1 {
+  margin: 5px 100px;
+  border-radius: 5px;
+}
+
+.input__2 {
+  margin: 5px 100px;
+  border-radius: 5px;
+}
+
+.danger {
+  margin: 30px 105px 20px 105px;
+  background-color: #2d251d;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: white;
+  filter: drop-shadow(0 2px 3px gray);
+}

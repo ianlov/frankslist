@@ -1,0 +1,189 @@
+.main__div {
+  display: flex;
+}
+
+.left__profile__panel {
+  margin: 60px 40px;
+}
+
+.profile-img {
+  width: 246px;
+  height: 242px;
+  border-radius: 10px;
+}
+
+.profile__info > p {
+  max-width: fit-content;
+  padding: 7px 0px;
+  font-weight: normal;
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 500px;
+  margin: 80px 0px;
+}
+
+.right__hobbies__panel {
+  margin: 40px 40px;
+  font-size: large;
+}
+
+.top__right > p {
+  padding: 25px 0px;
+  font-size: x-large;
+}
+
+.bottom__right > p {
+  padding: 30px 0px;
+  font-size: x-large;
+}
+
+/* .top__right {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.fav__carousel {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fav__carousel > img,
+.pool__img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 10px;
+  
+}
+
+.sug__carousel {
+  display: flex;
+}
+
+.sug__carousel > img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  overflow: hidden;
+  margin: 6px;
+}
+/* width per dropdown */
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 10px;
+}
+/* Black dropdown background */
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+/* black opacity of dropdown */
+
+.hover__text {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* text properties */
+
+.content:hover .hover__text {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+/* text centering and opacity */
+
+.hover__text h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+/* text coloring */
+
+.fadeIn__top {
+  top: 20%;
+}
+
+.hr {
+  display: none;
+}
+/* fade in from top */
+
+@media only screen and (max-width: 700px) {
+  .main__div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right__hobbies__panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  .fav__carousel {
+    flex-direction: column;
+  }
+
+  .sug__carousel {
+    flex-direction: column;
+  }
+
+  .content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 10px;
+  }
+}
