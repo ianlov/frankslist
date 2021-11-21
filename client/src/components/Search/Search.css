@@ -6,7 +6,7 @@
   width: 400px;
   transition: 0.8s;
 }
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1070px) {
   .bar {
     width: 300px;
   }
