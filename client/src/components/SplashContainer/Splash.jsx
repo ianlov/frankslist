@@ -17,7 +17,6 @@ const SplashContainer = ( props ) => {
   useEffect(() => {
     const fetchHobbies = async () => {
       const res = await fetchRequest.getHobbies();
-      console.log(res);
       setIndoor(
         randomizer(
           3,

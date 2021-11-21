@@ -75,7 +75,7 @@
 }
 
 .bottom__left__up ul li + li {
-  opacity: 50%;
+  color: gray;
 }
 
 .details__ul__left li:first-child {
@@ -97,7 +97,7 @@
 }
 
 .bottom__left__down p {
-  opacity: 50%;
+  color: gray;
 }
 
 .bottom__left__down button {
