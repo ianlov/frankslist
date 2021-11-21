@@ -41,7 +41,7 @@ const About = (props) => {
           name: "Ricky Boyd",
           bio: "Hey my name is Ricky, I'm from Memphis, TN. I currently live in Atlanta, GA and transitioned into software engineering from trucking/logistics after extensive research while on working over the road. A few hobbies I enjoy are...going to the gym, playing basketball, binge watch anime and shopping.",
           img_url:
-            "https://imgur.com/a/A3Y4MXg",
+            "https://i.imgur.com/vbwiMFr.jpg",
           github: "https://github.com/rickyboyd45",
           linkedin: "https://www.linkedin.com/in/ricky-boyd-7a41a6217/",
         });
@@ -117,7 +117,7 @@ const About = (props) => {
         </div>
         <div className="about-container__card" id="ricky" onClick={toggleModal}>
           <img
-            src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png"
+            src="https://i.imgur.com/vbwiMFr.jpg"
             alt="Marquel"
             id="ricky"
           />
