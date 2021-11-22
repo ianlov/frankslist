@@ -19,11 +19,11 @@ const About = (props) => {
       case "marquel":
         setFocus({
           name: "Marquel Sears",
-          bio: "grabby. Barry LANDS on a ball and COLLAPSES. - JS REVISIONS 8/13/07 25. BARRY Oh my sweet lord of bees. JACKSON Hey, candy brain, get off there! Barry attempts to pulls his legs off, but they stick. BARRY Problem! A tennis shoe and a hand ENTER FRAME. The hand picks up the ball with Barry underneath it. BARRY (CONT'D) Guys! BUZZ This could be bad. JACKSON Affirmative. Vanessa walks back to the service line, BOUNCES the ball. Each time it BOUNCES, the other bees cringe and GASP. ANGLE ON: Barry, terrified. P",
+          bio: "Hey, it's Marquel. I'm young, talented, handsome, and smart. I am an aircraft mechanic for the United States Air Force. I'm currently pursuing a career as a software developer. In my off time I like to play the ukelele, video games, workout, and bother my loved ones. Let's connect!",
           img_url:
-            "https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png",
-          github: "",
-          linkedin: "",
+            "https://i.imgur.com/ExGccLL.jpg",
+          github: "https://github.com/Marquel101",
+          linkedin: "https://www.linkedin.com/in/marquel-sears-0b8907219/",
         });
         break;
       case "ian":
@@ -39,11 +39,11 @@ const About = (props) => {
       case "ricky":
         setFocus({
           name: "Ricky Boyd",
-          bio: "grabby. Barry LANDS on a ball and COLLAPSES. - JS REVISIONS 8/13/07 25. BARRY Oh my sweet lord of bees. JACKSON Hey, candy brain, get off there! Barry attempts to pulls his legs off, but they stick. BARRY Problem! A tennis shoe and a hand ENTER FRAME. The hand picks up the ball with Barry underneath it. BARRY (CONT'D) Guys! BUZZ This could be bad. JACKSON Affirmative. Vanessa walks back to the service line, BOUNCES the ball. Each time it BOUNCES, the other bees cringe and GASP. ANGLE ON: Barry, terrified. Pure dumb luck, he’s",
+          bio: "Hey my name is Ricky, I'm from Memphis, TN. I currently live in Atlanta, GA and transitioned into software engineering from trucking/logistics after extensive research while on working over the road. A few hobbies I enjoy are...going to the gym, playing basketball, binge watch anime and shopping.",
           img_url:
-            "https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png",
-          github: "",
-          linkedin: "",
+            "https://i.imgur.com/woxoiQW.png",
+          github: "https://github.com/rickyboyd45",
+          linkedin: "https://www.linkedin.com/in/ricky-boyd-7a41a6217/",
         });
         break;
       case "paul":
@@ -59,11 +59,11 @@ const About = (props) => {
       case "vince":
         setFocus({
           name: "Vince Abuyuan",
-          bio: "grabby. Barry LANDS on a ball and COLLAPSES. - JS REVISIONS 8/13/07 25. BARRY Oh my sweet lord of bees. JACKSON Hey, candy brain, get off there! Barry attempts to pulls his legs off, but they stick. BARRY Problem! A tennis shoe and a hand ENTER FRAME. The hand picks up the ball with Barry underneath it. BARRY (CONT'D) Guys! BUZZ This could be bad. JACKSON Affirmative. Vanessa walks back to the service line, BOUNCES the ball. Each time it BOUNCES, the other bees cringe and GASP. ANGLE ON: Barry, terrified. Pure dumb l",
+          bio: "Hi my name is Vince (he/him). I have a background in working in the medical field and have a BS in Biopsychology from University of California, Santa Barbara. I like to spend my free time hanging out with my partner, camping, going to the beach, playing with my cats, and trying new foods.",
           img_url:
-            "https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png",
-          github: "",
-          linkedin: "",
+            "https://i.imgur.com/b6tQMlL.jpg",
+          github: "https://github.com/booyouon",
+          linkedin: "https://www.linkedin.com/in/vinceabuyuan/",
         });
         break;
       case "frank":
@@ -101,7 +101,7 @@ const About = (props) => {
           onClick={toggleModal}
         >
           <img
-            src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png"
+            src="https://i.imgur.com/4ZEgqKB.jpg"
             alt="Marquel"
             id="marquel"
           />
@@ -117,8 +117,8 @@ const About = (props) => {
         </div>
         <div className="about-container__card" id="ricky" onClick={toggleModal}>
           <img
-            src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png"
-            alt="Marquel"
+            src="https://i.imgur.com/woxoiQW.png"
+            alt="Ricky"
             id="ricky"
           />
           <p>Ricky Boyd</p>
@@ -133,8 +133,8 @@ const About = (props) => {
         </div>
         <div className="about-container__card" id="vince" onClick={toggleModal}>
           <img
-            src="https://media2.fdncms.com/metrotimes/imager/u/original/23590968/kermit_dia.png"
-            alt="Marquel"
+            src="https://i.imgur.com/b6tQMlL.jpg"
+            alt="Vince"
             id="vince"
           />
           <p>Vince Abuyuan</p>

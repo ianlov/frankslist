@@ -71,3 +71,31 @@
   text-align: right;
   margin-right: 10px;
 }
+
+@media only screen and (max-width: 929px) {
+  .hobby-card {
+    margin: 20px auto;
+    max-width: 729px;
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hobby-card {
+    height: auto;
+    flex-flow: column nowrap;
+  }
+
+  .hobby-card__image-box {
+    margin: 10px auto;
+    width: 95%;
+  }
+
+  .hobby-card__image-box > a > img {
+    width: 100%;
+  }
+
+  .hobby-card__info {
+    margin-top: 20px;
+  }
+}
