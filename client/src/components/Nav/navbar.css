@@ -122,7 +122,7 @@
 }
 
 .hamburgerMenu__ul {
-  list-style: square;
+  list-style: none;
 }
 
 .hamburgerMenu__ul > * {

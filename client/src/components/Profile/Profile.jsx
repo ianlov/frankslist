@@ -7,19 +7,11 @@ function ProfileContainer(props) {
         <div className="left__profile__panel">
           <img
             className="profile-img"
-            src="https://i.imgur.com/ZRJ7ogb.png"
+            src="https://icon-library.com/images/default-profile-icon/default-profile-icon-16.jpg"
             alt=""
           ></img>
           <div className="profile__info">
             <p>Hello {props.user.username}!</p>
-            <p>Location</p>
-            <p> # Hobbies</p>
-            <p>
-              User bio: According to all known laws of aviation, there is no way
-              that a bee should be able to fly. Its wings are too small to get
-              its fat little body off the ground. The bee, of course, flies
-              anyway. Because bees don’t care what humans think is impossible.”{" "}
-            </p>
           </div>
         </div>
         <div className="vl"></div>
