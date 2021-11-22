@@ -40,7 +40,10 @@ const Hobby = new Schema(
     name: { type: String, required: true },
     img_url: { type: String, required: true },
     description: { type: String, required: true },
-    price: { low: Number, high: Number, required: true },
+    price: {
+      low: { type: Number, required: true },
+      high: { type: Number, required: true },
+    },
     rating: { type: Number, required: false },
     indoors: { type: Boolean, required: true },
     risk: { type: Number, required: true },
@@ -74,14 +77,14 @@ const User = new Schema(
 
 #### Client (Front-End)
 
-- [ ] Have a working, interactive React app, built using npx create-react-app client
-- [ ] Have at least 6 separate, rendered components in an organized and understandable React file structure.
-- [ ] Utilize functional and class React components appropriately.
-- [ ] Use only React for DOM Manipulation.
-- [ ] Consume data from your API, and render that data in your components.
-- [ ] Utilize React Router, for client-side routing.
-- [ ] Have user authentication.
-- [ ] Have a home screen, listing screen, and detail screen.
+- [x] Have a working, interactive React app, built using npx create-react-app client
+- [x] Have at least 6 separate, rendered components in an organized and understandable React file structure.
+- [x] Utilize functional and class React components appropriately.
+- [x] Use only React for DOM Manipulation.
+- [x] Consume data from your API, and render that data in your components.
+- [x] Utilize React Router, for client-side routing.
+- [x] Have user authentication.
+- [x] Have a home screen, listing screen, and detail screen.
 
 #### Server (Back-End)
 
@@ -90,73 +93,177 @@ const User = new Schema(
 
 #### Styling
 
-- [ ] Be styled with CSS.
-- [ ] Use flexbox (display: flex) or CSS Grid.
-- [ ] Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile).
+- [x] Be styled with CSS.
+- [x] Use flexbox (display: flex) or CSS Grid.
+- [x] Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile).
 
 #### Linting
 
-- [ ] Indent properly.
-- [ ] Utilize high-quality, semantic variable names.
-- [ ] Follow camelCase and kebab-case conventions.
-- [ ] Remove unnecessary boilerplate React files and code.
-- [ ] Remove all console.log()s and commented out code (functional notes/comments are okay).
+- [x] Indent properly.
+- [x] Utilize high-quality, semantic variable names.
+- [x] Follow camelCase and kebab-case conventions.
+- [x] Remove unnecessary boilerplate React files and code.
+- [x] Remove all console.log()s and commented out code (functional notes/comments are okay).
 
 #### Deployment
 
-- [ ] Deploy the fully functional front-end via Netlify.
-- [ ] Deploy the back-end via Heroku.
-- [ ] Deploy the MongoDB database on MongoDB Atlas.
+- [x] Deploy the fully functional front-end via Netlify.
+- [x] Deploy the back-end via Heroku.
+- [x] Deploy the MongoDB database on MongoDB Atlas.
 
 #### Procedural
 
 - [x] Have frequent commits from every team member dating back to the very beginning of the project. These commits should total to or exceed 50.
-- [ ] Use effective and safe branching and merging processes.
+- [x] Use effective and safe branching and merging processes.
 
 ## Project Schedule
 
-| Day        | Deliverable                                            | Status     |
-| ---------- | ------------------------------------------------------ | ---------- |
-| Wed Nov 10 | Team Expectation Approval / Project Idea Brainstorming | Complete   |
-| Thu Nov 11 | Figma Wireframe / Whimsical Component Heiarchy         | Complete   |
-| Fri Nov 12 | Project Approvals / Start Back-End                     | Complete   |
-| Sat Nov 13 |                                                        | Complete   |
-| Sun Nov 14 | Start Back-End                                         | Complete   |
-| Mon Nov 15 | Back-End Complete / Front-End Boilerplate Complete     | Complete   |
-| Tue Nov 16 |                                                        | Incomplete |
-| Wed Nov 17 | MVP Done                                               | Incomplete |
-| Thu Nov 18 |                                                        | Incomplete |
-| Fri Nov 19 |                                                        | Incomplete |
-| Sat Nov 20 |                                                        | Incomplete |
-| Sun Nov 21 | Practice Presentation                                  | Incomplete |
-| Mon Nov 22 | Presentation                                           | Incomplete |
+| Day        | Deliverable                                            | Status   |
+| ---------- | ------------------------------------------------------ | -------- |
+| Wed Nov 10 | Team Expectation Approval / Project Idea Brainstorming | Complete |
+| Thu Nov 11 | Figma Wireframe / Whimsical Component Heiarchy         | Complete |
+| Fri Nov 12 | Project Approvals / Start Back-End                     | Complete |
+| Sat Nov 13 |                                                        | Complete |
+| Sun Nov 14 | Start Back-End                                         | Complete |
+| Mon Nov 15 | Back-End Complete / Front-End Boilerplate Complete     | Complete |
+| Tue Nov 16 |                                                        | Complete |
+| Wed Nov 17 |                                                        | Complete |
+| Thu Nov 18 |                                                        | Complete |
+| Fri Nov 19 | MVP Done (Full CRUD Front-End)                         | Complete |
+| Sat Nov 20 | Netlify Deployment                                     | Complete |
+| Sun Nov 21 | Practice Presentation                                  | Complete |
+| Mon Nov 22 | Presentation                                           | Complete |
 
 ## Code Samples
 
-### Code Sample 1
+### Code Sample: Dynamic Overlay
 
-he circumstances. \* They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the
-
-```
+The following code is from our style.css file for the profile page. This styling makes it so when the mouse hovers over the hobby card, a dark overlay covers the card and the title transitions down. It looks very clean and professional.
 
 ```
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 10px;
+}
+/* Black dropdown background */
 
-### Code Sample 2
+.content:hover .content-overlay {
+  opacity: 1;
+}
 
-he circumstances. \* They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the
+/* black opacity of dropdown */
 
+.hover__text {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* text properties */
+
+.content:hover .hover__text {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+/* text centering and opacity */
+
+.hover__text h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+/* text coloring */
+
+.fadeIn__top {
+  top: 20%;
+}
+
+.hr {
+  display: none;
+}
 ```
 
-```
+### Code Sample: Related (JS)
 
-### Code Sample 3
-
-he circumstances. \* They land in their seats. BARRY (CONT’D) Well Adam, today we are men. "Bee Movie" - JS REVISIONS 8/13/07 5. ADAM We are. BARRY Bee-men. ADAM Amen! BARRY Hallelujah. Barry hits Adam’s forehead. Adam goes into the rapture. An announcement comes over the PA. ANNOUNCER (V.O) Students, faculty, distinguished bees...please welcome, Dean Buzzwell. ANGLE ON: DEAN BUZZWELL steps up to the
+The following code was used as a utility on the front end to get a random three related hobbies from a list of hobbies. The "related" function filters through the hobbies based on the "risk" integer and "indoor" boolean. It also filters out the inputted hobby based on name. The function then calls the randomizer function to pull three random hobbies from the new related list. These functions were used in a few places in our app.
 
 ```
+const randomizer = (n, arr) => {
+  const random = [];
+  for (let i = n; i > 0; i--) {
+    let randInd = Math.floor(Math.random() * arr.length);
+    random.push(arr[randInd])
+    arr.splice(randInd, 1)
+  }
+  return random
+}
 
+const related = (hobbyDetail, hobbies) => {
+  let related = hobbies.filter((hobby) => {
+    return (
+      ( hobby.indoors === hobbyDetail.indoors ||
+      Math.floor(hobby.risk) === Math.floor(hobbyDetail.risk) ) &&
+      hobby.name !== hobbyDetail.name
+    )
+  })
+  console.log(related)
+  related = randomizer(3, related)
+  return related
+}
+```
+
+### Code Sample: Modals (React.js)
+
+The following is a stripped down code sample from our about page, which uses a modal to pop up extra information about the developers when you click on thier picture. The createPortal function makes a separate body that is on top of the existing body, allowing the user to view extra information without feeling like they have left the page. To make the modal functional, you have to set it as a component in the parent component, and make a state that toggles the visibility (isVisible in this case). The button shown below as well as the developer image toggle visibility.
+
+```
+import { createPortal } from "react-dom";
+
+const AboutModal = ({ setIsVisible, isVisible }) => {
+  return isVisible ? createPortal(
+    <button className="modal-container__button" onClick={() => setIsVisible(!isVisible)} >Close</button>
+    document.body,
+  ) : null
+}
 ```
 
 ## Lessons Learned about Communication and Working on a Team
 
-Here’s the graduate. We’re very proud of you, Son. And a perfect report card, all B’s. JANET BENSON (mushing Barry’s hair) Very proud. BARRY Ma! I’ve got a thing going here. Barry re-adjusts his hair, starts to leave. JANET BENSON You’ve got some lint on your fuzz. She picks it off. BARRY Ow, that’s me! MARTIN BENSON Wave to us. We’ll be in row 118,000. Barry zips off. BARRY Bye! JANET BENSON Barry, I told you, stop flying in the house! CUT TO: SEQ. 750 - DRIVING TO GRADUATION EXT. BEE SUBURB - MORNING A GARAGE DOOR OPENS. Barry drives out in his CAR. "Bee Movie" - JS REVISIONS 8/13
+#### Ian
+
+Working with this group - as far as team dynamic and sharing burden goes - was a really smooth process. Figuring out the process of pushing and pulling changes from github was a different story. Although github is a powerful tool for collaboration, it takes a lot of coordination and attention to detail. I ended up losing commits and having to redo work a number of times becasue I did some pull request wrong. It is important to keep track of where your local repository is in relation to the remote, as well as development and main branches. Push work to your personal branch before pulling from the development, and run npm i every time you pull a new version of the development branch.
+
+Other than the lessons I learned from github, I saw how powerful collaboration can be. Our team completed a project that no individual team member would have been able to complete within the time given. And personally, I saw features of our website built that I would have never even thought of on my own. Truly, Frankslist is the product of a team that is greater than the sum of its parts.
+
+#### Vince
+
+#### Ricky
+
+#### Paul
+
+#### Marquel
