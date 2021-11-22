@@ -18,6 +18,8 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 #### [Component Hierarchy](https://whimsical.com/project-3-component-hierarchy-GCXHbyVzbsU1NDhVJqskgQ)
 
+#### [Deployed Site](https://https://franks-list.netlify.app/)
+
 ## Wireframes
 
 ### Desktop
@@ -267,8 +269,14 @@ Working in a team overall though was great! Everyone in my team did work, showed
 
 #### Ricky
 
-Overall, I think working in a group was a great experience. Being able to pick the mind of your teammates and learn things from a peer perspective was a new and exciting way to learn. The problems did'nt seem as big with people ready and willing to work it out as a team. I think we all can agree getting in sync with our github was difficult at times, but we overcame it and got on track to create this product. Great experience and I enjoyed the entire process, even the rough parts. 
+Overall, I think working in a group was a great experience. Being able to pick the mind of your teammates and learn things from a peer perspective was a new and exciting way to learn. The problems didn't seem as big with people ready and willing to work it out as a team. I think we all can agree getting in sync with our github was difficult at times, but we overcame it and got on track to create this product. Great experience and I enjoyed the entire process, even the rough parts. 
 
 #### Paul
+
+I would say that working on this project as a group has taught me more than any previous project I've ever done. Being able to plan, code, troubleshoot, debug, and deploy as a team was a great experience; often when working by myself, keeping everything in mind can be a bit overwhelming, but when working in a group where each memeber has a specific goal in mind keeps things fresh and allows you to really hone in on what you are working on and polish it up nicely. 
+
+Github merge issues were definitely a challenge, understanding why some errors happen and getting branches up to date before pushing were all part of the learning process. I am now much more familiar with how to work in a team environment using github and feel pretty confident on how to troubleshoot github issues when merging. 
+
+Overall, the experience of working with my team on this project was one I would absolutely do again and wish we all could work at the same company in the future (or make our own ) so I could always have this type of high level teamwork. We had no bumps in the road in terms of task delegation or a clashing of personalities; each of us shared the role of leading when it came to different ideas and how to implement them and am very grateful to have worked with such a great team. 
 
 #### Marquel
