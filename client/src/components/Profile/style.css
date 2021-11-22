@@ -66,6 +66,7 @@
 
 .sug__carousel {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .sug__carousel > img {
