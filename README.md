@@ -18,7 +18,7 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 #### [Component Hierarchy](https://whimsical.com/project-3-component-hierarchy-GCXHbyVzbsU1NDhVJqskgQ)
 
-#### [Deployed Site](https://https://franks-list.netlify.app/)
+#### [Deployed Site](https://franks-list.netlify.app/)
 
 ## Wireframes
 
