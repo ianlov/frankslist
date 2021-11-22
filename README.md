@@ -264,6 +264,8 @@ Other than the lessons I learned from github, I saw how powerful collaboration c
 
 #### Ricky
 
+Overall, I think working in a group was a great experience. Being able to pick the mind of your teammates and learn things from a peer perspective was a new and exciting way to learn. The problems did'nt seem as big with people ready and willing to work it out as a team. I think we all can agree getting in sync with our github was difficult at times, but we overcame it and got on track to create this product. Great experience and I enjoyed the entire process, even the rough parts. 
+
 #### Paul
 
 #### Marquel
