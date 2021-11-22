@@ -261,6 +261,9 @@ Working with this group - as far as team dynamic and sharing burden goes - was a
 Other than the lessons I learned from github, I saw how powerful collaboration can be. Our team completed a project that no individual team member would have been able to complete within the time given. And personally, I saw features of our website built that I would have never even thought of on my own. Truly, Frankslist is the product of a team that is greater than the sum of its parts.
 
 #### Vince
+Working in a team was definitely a very different experience in comparison to working alone. Work was split up and there was always someone there to bounce ideas off of which definitely helped with the creative thinking process. I must say that I enjoyed this process a lot. I will admit though, it was a headache dealing with merge conflicts and git issues. Sometimes we would spend an hour just dealing with a single issue and frustratingly try different git commands from stackoverflow. Definitely by going through these issues though has helped me become 100 times more confident in using git commands and now understand the importance of git commits... If you ever mess things up beyond repair... you can always git reflog then git reset.
+
+Working in a team overall though was great! Everyone in my team did work, showed up when they were supposed to, and communicated effectively. I was able to learn new things along the way and feel that I have grown as a developer through this process. 
 
 #### Ricky
 
