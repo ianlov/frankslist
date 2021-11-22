@@ -22,11 +22,11 @@ Frankslist is optimized for web and mobile with full Back-End CRUD functionality
 
 ### Desktop
 
-![image](https://user-images.githubusercontent.com/89525025/141539662-0dbb0157-83e5-4bc5-a7d1-57918ab395d8.png)
+![image](https://i.imgur.com/oVzC3yr.jpg)
 
 ### Mobile
 
-![image](https://user-images.githubusercontent.com/89525025/141540750-3155c928-172b-4acd-8b06-865324e4f054.png)
+![image](https://i.imgur.com/1N5kXOD.png)
 
 ## Component Hierarchy
 
