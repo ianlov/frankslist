@@ -280,3 +280,5 @@ Github merge issues were definitely a challenge, understanding why some errors h
 Overall, the experience of working with my team on this project was one I would absolutely do again and wish we all could work at the same company in the future (or make our own ) so I could always have this type of high level teamwork. We had no bumps in the road in terms of task delegation or a clashing of personalities; each of us shared the role of leading when it came to different ideas and how to implement them and am very grateful to have worked with such a great team. 
 
 #### Marquel
+
+I learned that a lot while working in this group. I learned a lot of useful ways of styling css, and I have learned how to flow while working with a group of more than 3 people. I learned you can have learn, work, and have fun all at the same time. I have definitely improved a lot, but I think the biggest lesson learned is that they're is still room for improvement. And with the help of those around me, I'm sure to grow every time.
