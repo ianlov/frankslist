@@ -266,4 +266,10 @@ Other than the lessons I learned from github, I saw how powerful collaboration c
 
 #### Paul
 
+I would say that working on this project as a group has taught me more than any previous project I've ever done. Being able to plan, code, troubleshoot, debug, and deploy as a team was a great experience; often when working by myself, keeping everything in mind can be a bit overwhelming, but when working in a group where each memeber has a specific goal in mind keeps things fresh and allows you to really hone in on what you are working on and polish it up nicely. 
+
+Github merge issues were definitely a challenge, understanding why some errors happen and getting branches up to date before pushing were all part of the learning process. I am now much more familiar with how to work in a team environment using github and feel pretty confident on how to troubleshoot github issues when merging. 
+
+Overall, the experience of working with my team on this project was one I would absolutely do again and wish we all could work at the same company in the future (or make our own ) so I could always have this type of high level teamwork. We had no bumps in the road in terms of task delegation or a clashing of personalities; each of us shared the role of leading when it came to different ideas and how to implement them and am very grateful to have worked with such a great team. 
+
 #### Marquel
